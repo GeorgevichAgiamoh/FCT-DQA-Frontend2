@@ -1,0 +1,828 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site-Evaluation-Form</title>
+    <!--Bootstrap CSS-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!--Font Awesome-->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
+    <!-- custom css -->
+    <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand d-flex flex-column align-item-start" id="sidebar">
+        <a href="#" class="navbar-brand">
+            <img src="/images/logo.png" alt="" class="img-fluid" width="100">
+        </a>
+        <ul class="navbar-nav d-flex flex-column mt-1 w-100">
+            <li class="nav-item w-100">
+                <a href="#" class="nav-link text-light px-3 py-2 d-block">
+                    <i class="fal fa-home"></i>
+                    Dashboard
+                </a>
+            </li>
+            <li class="nav-item w-100">
+                <a href="#" class="nav-link text-light px-3 py-2 d-block">
+                    <i class="fal fa-folder-open"></i>
+                    Directory
+                </a>
+            </li>
+            <li class="nav-item w-100">
+                <a href="#" class="nav-link text-light px-3 py-2 d-block">
+                    <i class="fal fa-balance-scale"></i> Workflow
+                </a>
+            </li>
+            <li class="nav-item w-100">
+                <a href="#" class="nav-link text-light px-3 py-2 d-block">
+                    <i class="fal fa-envelope"></i> E-Notification
+                </a>
+            </li>
+            <li class="nav-item w-100">
+                <a href="#" class="nav-link text-light px-3 py-2 d-block">
+                    <i class="fal fa-credit-card"></i>
+                    Payments
+                </a>
+            </li>
+            <li class="nav-item w-100">
+                <a href="#" class="nav-link text-light px-3 py-2 d-block">
+                    <i class="fal fa-id-badge"></i>
+                    Identity Management
+                </a>
+            </li>
+            <li class="nav-item w-100">
+                <a href="#" class="nav-link text-light px-3 py-2 d-block">
+                    <i class="fal fa-location"></i>
+                    School Geolocator
+                </a>
+            </li>
+            <li class="nav-item w-100">
+                <a href="#" class="nav-link text-light px-3 py-2 d-block">
+                    <i class="fal fa-sign-out-alt"></i>
+                    Logout
+                </a>
+            </li>
+        </ul>
+    </nav>
+
+    <section class=" my-container">
+        <nav class="nav bg-white shadow-sm sticky-top d-flex justify-content-between">
+            <div class="d-flex m-3">
+                <button class="btn btn-sm" id="menu-btn"><i class="fal fa-bars text-blue fw-bolder"></i></button>
+                <h2 class="fs-5 yellowText ps-2 mt-1">SITE EVALUATION</h2>
+            </div>
+            <div class="d-flex mt-3">
+                <a class="nav-link" href="#">
+                    <div type="button" class=" position-relative ">
+                        <i class="fal fa-bell text-blue fw-bolder"></i>
+                        <span
+                            class="position-absolute top-0 start-100 translate-middle p-1 bg-primary border border-light rounded-circle">
+                            <span class="visually-hidden">New alerts</span>
+                        </span>
+                    </div>
+                </a>
+                <a class="nav-link" href="#">
+                    <img src="/images/headerImage.png" alt="" class="img-fluid thumbnail rounded-circle bg2 p-1">
+                    <span>Admin</span>
+                </a>
+            </div>
+        </nav>
+
+        <div class="dashboard-content px-3 pt-4">
+            <div class="row justify-content-center">
+                <div class="col-md-10">
+                    <div class="d-flex justify-content-between mb-3">
+                        <i class="fal fa-arrow-left"> Go Back</i>
+                        <button type="button" class="btn btn-primary btn-sm">SAVE</button>
+                    </div>
+                    <div class="card shadow border-0 mb-5">
+                        <div class="card-header bg-transparent border-0 yellowText">
+                            <i class="fal fa-user"></i>
+                            Particulars of Institution
+                        </div>
+                        <div class="card-body">
+                            <form action="" class="">
+                                <div class="row g-3">
+                                    <div class="col-md-12">
+                                        <div class="input-group">
+                                            <input type="text" class="form-control"
+                                                placeholder="Name of Proposed Institution ">
+                                            <span class="input-group-text bg2 border-0">
+                                                <i class="fal fa-search"></i>
+                                            </span>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-12">
+                                        <input type="text" class="form-control"
+                                            placeholder="Area council (Autogenerated)">
+                                    </div>
+
+                                    <div class="col-md-12">
+                                        <input type="text" class="form-control"
+                                            placeholder="Town/District (Autogenerated)">
+                                    </div>
+
+                                    <div class="col-md-12">
+                                        <input type="text" class="form-control"
+                                            placeholder="Full Address (Autogenerated)">
+                                    </div>
+
+                                    <div class="col-md-12">
+                                        <input type="text" class="form-control"
+                                            placeholder="Area council (Autogenerated)">
+                                    </div>
+
+                                    <div class="col-md-12">
+                                        <input type="text" class="form-control" placeholder="Phone (Autogenerated)">
+                                    </div>
+
+                                </div>
+
+                                <div class="row g-3">
+                                    <div class="col-md-12">
+                                        <h6 class="card-subtitle mt-3 small">Type of Institution [Select One]</h6>
+                                    </div>
+
+                                    <div class="col-md-12">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="institution"
+                                                id="BasicEducation">
+                                            <label class="form-check-label" for="BasicEducation">
+                                                Basic Education
+                                            </label>
+                                        </div>
+
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="institution"
+                                                id="Grammar-Secondary">
+                                            <label class="form-check-label" for="Grammar-Secondary">
+                                                Senior Secondary (Grammar)
+                                            </label>
+                                        </div>
+
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="institution"
+                                                id="Commercial-Secondary">
+                                            <label class="form-check-label" for="Commercial-Secondary">
+                                                Senior Secondary (Commercial)
+                                            </label>
+                                        </div>
+
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="institution"
+                                                id="Technical-Secondary">
+                                            <label class="form-check-label" for="Technical-Secondary">
+                                                Senior Secondary (Technical)
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row g-3">
+                                    <div class="col-md-12">
+                                        <h6 class="card-subtitle mt-3 small">Type of Institution [Select One]</h6>
+                                    </div>
+
+                                    <div class="col-md-12">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="institution-format"
+                                                id="Day">
+                                            <label class="form-check-label" for="Day">
+                                                Day
+                                            </label>
+                                        </div>
+
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="institution-format"
+                                                id="boarding">
+                                            <label class="form-check-label" for="boarding">
+                                                Boarding
+                                            </label>
+                                        </div>
+
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="institution-format"
+                                                id="both">
+                                            <label class="form-check-label" for="both">
+                                                Both
+                                            </label>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+
+                                <div class="row g-3">
+                                    <div class="col-md-12">
+                                        <h6 class="card-subtitle mt-3 small">Type of Institution [Select One]</h6>
+                                    </div>
+
+                                    <div class="col-md-12">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="institution-gender"
+                                                id="Male">
+                                            <label class="form-check-label" for="Male">
+                                                Male
+                                            </label>
+                                        </div>
+
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="institution-gender"
+                                                id="female">
+                                            <label class="form-check-label" for="female">
+                                                Female
+                                            </label>
+                                        </div>
+
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="institution-gender"
+                                                id="coeducation">
+                                            <label class="form-check-label" for="coeducation">
+                                                Both
+                                            </label>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                                <div class="row g-3">
+                                    <div class="col-md-12">
+                                        <h6 class="card-subtitle mt-3 small">Names of Proprietors</h6>
+                                    </div>
+
+                                    <div class="col-md-12">
+                                        <input type="text" class="form-control" placeholder="(Autogenerated)">
+                                    </div>
+
+                                    <div class="col-md-12">
+                                        <input type="text" class="form-control" placeholder="(Autogenerated)">
+                                    </div>
+
+                                    <div class="col-md-12">
+                                        <input type="text" class="form-control" placeholder="(Autogenerated)">
+                                    </div>
+                                </div>
+
+                                <div class="row g-3">
+                                    <div class="col-md-12">
+                                        <h6 class="card-subtitle mt-3 small">
+                                            Designated Purpose of Land [Select One]
+                                        </h6>
+                                    </div>
+
+                                    <div class="col-md-12">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="land-purpose"
+                                                id="School">
+                                            <label class="form-check-label" for="School">
+                                                School
+                                            </label>
+                                        </div>
+
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="land-purpose"
+                                                id="Commercial">
+                                            <label class="form-check-label" for="Commercial">
+                                                Commercial
+                                            </label>
+                                        </div>
+
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="land-purpose"
+                                                id="Residential">
+                                            <label class="form-check-label" for="Residential">
+                                                Residential
+                                            </label>
+                                        </div>
+
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="land-purpose"
+                                                id="Farmland">
+                                            <label class="form-check-label" for="Farmland">
+                                                Farmland
+                                            </label>
+                                        </div>
+
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="land-purpose"
+                                                id="Multi-Purpose">
+                                            <label class="form-check-label" for="Multi-Purpose">
+                                                Multi-Purpose
+                                            </label>
+                                        </div>
+
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="land-purpose"
+                                                id="Local-Land">
+                                            <label class="form-check-label" for="Local-Land">
+                                                Local Land
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row g-3">
+                                    <div class="col-md-12">
+                                        <label for="plotSize" class="form-label">Size of Plot </label>
+                                        <input type="text" class="form-control" placeholder="Size" id="plotSize">
+                                    </div>
+
+                                </div>
+
+                                <div class="row g-3">
+                                    <div class="col-md-12">
+                                        <h6 class="card-subtitle mt-3 small">
+                                            Is the plot situated near/within any of the following
+                                        </h6>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <div class="row">
+                                            <div class="col-md-3">
+                                                <div class="form-check form-check-inline">
+                                                    <label class="form-check-label">Market</label>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-3">
+                                                <div class="form-check form-check-inline">
+                                                    <input class="form-check-input" type="radio" name="Market"
+                                                        id="market-yes" value="option1">
+                                                    <label class="form-check-label" for="market-yes">Yes</label>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-3">
+                                                <div class="form-check form-check-inline">
+                                                    <input class="form-check-input" type="radio" name="Market"
+                                                        id="market-no" value="option2">
+                                                    <label class="form-check-label" for="market-no">No</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                    <div class="col-md-12">
+                                        <div class="row">
+                                            <div class="col-md-3">
+                                                <div class="form-check form-check-inline">
+                                                    <label class="form-check-label">Bar/Public Dining Place</label>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-3">
+                                                <div class="form-check form-check-inline">
+                                                    <input class="form-check-input" type="radio"
+                                                        name="Bar/Public Dining Place" id="dining-yes" value="option1">
+                                                    <label class="form-check-label" for="dining-yes">Yes</label>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-3">
+                                                <div class="form-check form-check-inline">
+                                                    <input class="form-check-input" type="radio"
+                                                        name="Bar/Public Dining Place" id="dining-no" value="option2">
+                                                    <label class="form-check-label" for="dining-no">No</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-12">
+                                        <div class="row">
+                                            <div class="col-md-3">
+                                                <div class="form-check form-check-inline">
+                                                    <label class="form-check-label">Political Party Office</label>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-3">
+                                                <div class="form-check form-check-inline">
+                                                    <input class="form-check-input" type="radio" name="politicalOffice"
+                                                        id="political-yes" value="option1">
+                                                    <label class="form-check-label" for="political-yes">Yes</label>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-3">
+                                                <div class="form-check form-check-inline">
+                                                    <input class="form-check-input" type="radio" name="politicalOffice"
+                                                        id="political-no" value="option2">
+                                                    <label class="form-check-label" for="political-no">No</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-12">
+                                        <div class="row">
+                                            <div class="col-md-3">
+                                                <div class="form-check form-check-inline">
+                                                    <label class="form-check-label">Electrical High Tension Wire</label>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-3">
+                                                <div class="form-check form-check-inline">
+                                                    <input class="form-check-input" type="radio" name="Electrical"
+                                                        id="electrical-yes" value="option1">
+                                                    <label class="form-check-label" for="electrical-yes">Yes</label>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-3">
+                                                <div class="form-check form-check-inline">
+                                                    <input class="form-check-input" type="radio" name="Electrical"
+                                                        id="electrical-no" value="option2">
+                                                    <label class="form-check-label" for="electrical-no">No</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-12">
+                                        <div class="row">
+                                            <div class="col-md-3">
+                                                <div class="form-check form-check-inline">
+                                                    <label class="form-check-label">Express Road</label>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-3">
+                                                <div class="form-check form-check-inline">
+                                                    <input class="form-check-input" type="radio" name="express-road"
+                                                        id="expressRoad-yes" value="option1">
+                                                    <label class="form-check-label" for="expressRoad-yes">Yes</label>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-3">
+                                                <div class="form-check form-check-inline">
+                                                    <input class="form-check-input" type="radio" name="express-road"
+                                                        id="expressRoad-no" value="option2">
+                                                    <label class="form-check-label" for="expressRoad-no">No</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-12">
+                                        <div class="row">
+                                            <div class="col-md-3">
+                                                <div class="form-check form-check-inline">
+                                                    <label class="form-check-label">Hilltop or Undulated Land</label>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-3">
+                                                <div class="form-check form-check-inline">
+                                                    <input class="form-check-input" type="radio" name="hilltop"
+                                                        id="hilltop-yes" value="option1">
+                                                    <label class="form-check-label" for="hilltop-yes">Yes</label>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-3">
+                                                <div class="form-check form-check-inline">
+                                                    <input class="form-check-input" type="radio" name="hilltop"
+                                                        id="hilltop-no" value="option2">
+                                                    <label class="form-check-label" for="hilltop-no">No</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-12">
+                                        <div class="row">
+                                            <div class="col-md-3">
+                                                <div class="form-check form-check-inline">
+                                                    <label class="form-check-label">Riverbed or Swampy Area</label>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-3">
+                                                <div class="form-check form-check-inline">
+                                                    <input class="form-check-input" type="radio" name="Swampy"
+                                                        id="swampy-yes" value="option1">
+                                                    <label class="form-check-label" for="swampy-yes">Yes</label>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-3">
+                                                <div class="form-check form-check-inline">
+                                                    <input class="form-check-input" type="radio" name="Swampy"
+                                                        id="swampy-no" value="option2">
+                                                    <label class="form-check-label" for="swampy-no">No</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-12">
+                                        <div class="row">
+                                            <div class="col-md-3">
+                                                <div class="form-check form-check-inline">
+                                                    <label class="form-check-label">Motor Park</label>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-3">
+                                                <div class="form-check form-check-inline">
+                                                    <input class="form-check-input" type="radio" name="motor-park"
+                                                        id="motor-park-yes" value="option1">
+                                                    <label class="form-check-label" for="motor-park-yes">Yes</label>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-3">
+                                                <div class="form-check form-check-inline">
+                                                    <input class="form-check-input" type="radio" name="motor-park"
+                                                        id="motor-park-no" value="option2">
+                                                    <label class="form-check-label" for="motor-park-no">No</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-12">
+                                        <div class="row">
+                                            <div class="col-md-3">
+                                                <div class="form-check form-check-inline">
+                                                    <label class="form-check-label">Fuel Station/Depot/Pipeline</label>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-3">
+                                                <div class="form-check form-check-inline">
+                                                    <input class="form-check-input" type="radio" name="Fuel"
+                                                        id="fuel-yes" value="option1">
+                                                    <label class="form-check-label" for="fuel-yes">Yes</label>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-3">
+                                                <div class="form-check form-check-inline">
+                                                    <input class="form-check-input" type="radio" name="Fuel"
+                                                        id="fuel-no" value="option2">
+                                                    <label class="form-check-label" for="fuel-no">No</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row g-3">
+                                    <div class="col-md-12">
+                                        <h6 class="card-subtitle mt-3 small">
+                                            Access Road [Select One]
+                                        </h6>
+                                    </div>
+
+                                    <div class="col-md-12">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="access-road" id="Tarred">
+                                            <label class="form-check-label" for="Tarred">
+                                                Tarred
+                                            </label>
+                                        </div>
+
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="access-road"
+                                                id="Laterite">
+                                            <label class="form-check-label" for="Laterite">
+                                                Laterite
+                                            </label>
+                                        </div>
+
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="access-road"
+                                                id="Footpath">
+                                            <label class="form-check-label" for="Footpath">
+                                                Footpath
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row g-3">
+                                    <div class="col-md-12">
+                                        <h6 class="card-subtitle mt-3 small">
+                                            Land Documents Available
+                                        </h6>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <div class="row">
+                                            <div class="col-md-3">
+                                                <div class="form-check form-check-inline">
+                                                    <label class="form-check-label">Certificate of Occupancy </label>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-3">
+                                                <div class="form-check form-check-inline">
+                                                    <input class="form-check-input" type="radio" name="COO" id="COO-yes"
+                                                        value="option1">
+                                                    <label class="form-check-label" for="COO-yes">Yes</label>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-3">
+                                                <div class="form-check form-check-inline">
+                                                    <input class="form-check-input" type="radio" name="COO" id="COO-no"
+                                                        value="option2">
+                                                    <label class="form-check-label" for="COO-no">No</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                    <div class="col-md-12">
+                                        <div class="row">
+                                            <div class="col-md-3">
+                                                <div class="form-check form-check-inline">
+                                                    <label class="form-check-label">Right of Occupancy</label>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-3">
+                                                <div class="form-check form-check-inline">
+                                                    <input class="form-check-input" type="radio" name="RightofOccupancy"
+                                                        id="ROO-yes" value="option1">
+                                                    <label class="form-check-label" for="ROO-yes">Yes</label>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-3">
+                                                <div class="form-check form-check-inline">
+                                                    <input class="form-check-input" type="radio" name="RightofOccupancy"
+                                                        id="ROO-no" value="option2">
+                                                    <label class="form-check-label" for="ROO-no">No</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-12">
+                                        <div class="row">
+                                            <div class="col-md-3">
+                                                <div class="form-check form-check-inline">
+                                                    <label class="form-check-label">Site Plan</label>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-3">
+                                                <div class="form-check form-check-inline">
+                                                    <input class="form-check-input" type="radio" name="sitePlan"
+                                                        id="siteplan-yes" value="option1">
+                                                    <label class="form-check-label" for="siteplan-yes">Yes</label>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-3">
+                                                <div class="form-check form-check-inline">
+                                                    <input class="form-check-input" type="radio" name="sitePlan"
+                                                        id="siteplan-no" value="option2">
+                                                    <label class="form-check-label" for="siteplan-no">No</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-12">
+                                        <div class="row">
+                                            <div class="col-md-3">
+                                                <div class="form-check form-check-inline">
+                                                    <label class="form-check-label">Approved Building Plan</label>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-3">
+                                                <div class="form-check form-check-inline">
+                                                    <input class="form-check-input" type="radio" name="building-plan"
+                                                        id="buildingPlan-yes" value="option1">
+                                                    <label class="form-check-label" for="buildingPlan-yes">Yes</label>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-3">
+                                                <div class="form-check form-check-inline">
+                                                    <input class="form-check-input" type="radio" name="building-plan"
+                                                        id="buildingPlan-no" value="option2">
+                                                    <label class="form-check-label" for="buildingPlan-no">No</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row g-3">
+                                    <div class="col-md-12">
+                                        <label for="comment" class="form-label">Comments</label>
+                                        <textarea name="" id="comment" cols="30" rows="4"
+                                            class="form-control"></textarea>
+                                    </div>
+                                </div>
+
+                                <div class="row g-3">
+                                    <div class="col-md-12">
+                                        <label for="recommendation" class="form-label">Recommendation</label>
+                                        <textarea name="" id="recommendation" cols="30" rows="4"
+                                            class="form-control"></textarea>
+                                    </div>
+                                </div>
+
+                                <div class="row g-3">
+                                    <div class="col-md-12">
+                                        <h6 class="card-subtitle mt-3 small">Coordinating Evaluator</h6>
+                                    </div>
+
+                                    <div class="col-md-12">
+                                        <input type="text" class="form-control" placeholder="Name (Autogenerated)">
+                                    </div>
+
+                                    <div class="col-md-12">
+                                        <input type="text" class="form-control"
+                                            placeholder="Designation (Autogenerated)">
+                                    </div>
+
+                                    <div class="col-md-12">
+                                        <input type="text" class="form-control"
+                                            placeholder="Date of Evaluation (Autogenerated)">
+                                    </div>
+                                </div>
+
+
+                                <div class="row g-3">
+                                    <div class="col-md-12">
+                                        <h6 class="card-subtitle mt-3 small">Technical Officer</h6>
+                                    </div>
+
+                                    <div class="col-md-12">
+                                        <input type="text" class="form-control" placeholder="Name (Autogenerated)">
+                                    </div>
+
+                                    <div class="col-md-12">
+                                        <input type="text" class="form-control"
+                                            placeholder="Designation (Autogenerated)">
+                                    </div>
+
+                                    <div class="col-md-12">
+                                        <input type="text" class="form-control"
+                                            placeholder="Date of Evaluation (Autogenerated)">
+                                    </div>
+                                </div>
+
+                                <div class="row g-3">
+                                    <div class="col-md-12">
+                                        <h6 class="card-subtitle mt-3 small">Recommendation by Head of Registration &
+                                            Accreditation </h6>
+                                    </div>
+
+                                    <div class="col-md-12">
+                                        <textarea name="" id="recommendation" cols="30" rows="4" class="form-control"
+                                            placeholder="Recommendation"></textarea>
+                                    </div>
+
+                                    <div class="col-md-12">
+                                        <input type="text" class="form-control" placeholder="Name (Autogenerated)">
+                                    </div>
+
+                                    <div class="col-md-12">
+                                        <input type="text" class="form-control"
+                                            placeholder="Date of Evaluation (Autogenerated)">
+                                    </div>
+                                </div>
+
+                                <div class="row g-3">
+                                    <div class="col-md-12">
+                                        <h6 class="card-subtitle mt-3 small">DQA Directors Approval</h6>
+                                    </div>
+
+                                    <div class="col-md-12">
+                                        <div class="form-check form-check-inline">
+                                            <label class="form-check-label small">Approval</label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="radio" name="DQAapproval"
+                                                id="DQAapproval-yes" value="yes">
+                                            <label class="form-check-label" for="DQAapproval-yes">Yes</label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="radio" name="DQAapproval"
+                                                id="DQAapproval-no" value="no">
+                                            <label class="form-check-label" for="DQAapproval-no">No</label>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="col-md-12">
+                                        <input type="text" class="form-control" placeholder="Name (Autogenerated)">
+                                    </div>
+
+                                    <div class="col-md-12">
+                                        <input type="text" class="form-control"
+                                            placeholder="Date of Evaluation (Autogenerated)">
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- bootstrap js -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+        crossorigin="anonymous"></script>
+    <!-- custom js -->
+    <script src="/script.js"></script>
+</body>
+
+</html>

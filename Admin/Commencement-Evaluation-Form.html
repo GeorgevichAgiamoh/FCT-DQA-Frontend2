@@ -1,0 +1,1052 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Commencement-Evaluation-Form</title>
+    <!--Bootstrap CSS-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!--Font Awesome-->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
+    <!-- custom css -->
+    <link rel="stylesheet" href="/style.css">
+
+    <!--Replicate JS CSS-->
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/4.6.2/flatly/bootstrap.min.css"> -->
+
+</head>
+
+<body>
+    <nav class="navbar navbar-expand d-flex flex-column align-item-start" id="sidebar">
+        <a href="#" class="navbar-brand">
+            <img src="/images/logo.png" alt="" class="img-fluid" width="100">
+        </a>
+        <ul class="navbar-nav d-flex flex-column mt-1 w-100">
+            <li class="nav-item w-100">
+                <a href="#" class="nav-link text-light px-3 py-2 d-block">
+                    <i class="fal fa-home"></i>
+                    Dashboard
+                </a>
+            </li>
+            <li class="nav-item w-100">
+                <a href="#" class="nav-link text-light px-3 py-2 d-block">
+                    <i class="fal fa-folder-open"></i>
+                    Directory
+                </a>
+            </li>
+            <li class="nav-item w-100">
+                <a href="#" class="nav-link text-light px-3 py-2 d-block">
+                    <i class="fal fa-balance-scale"></i> Workflow
+                </a>
+            </li>
+            <li class="nav-item w-100">
+                <a href="#" class="nav-link text-light px-3 py-2 d-block">
+                    <i class="fal fa-envelope"></i> E-Notification
+                </a>
+            </li>
+            <li class="nav-item w-100">
+                <a href="#" class="nav-link text-light px-3 py-2 d-block">
+                    <i class="fal fa-credit-card"></i>
+                    Payments
+                </a>
+            </li>
+            <li class="nav-item w-100">
+                <a href="#" class="nav-link text-light px-3 py-2 d-block">
+                    <i class="fal fa-id-badge"></i>
+                    Identity Management
+                </a>
+            </li>
+            <li class="nav-item w-100">
+                <a href="#" class="nav-link text-light px-3 py-2 d-block">
+                    <i class="fal fa-location"></i>
+                    School Geolocator
+                </a>
+            </li>
+            <li class="nav-item w-100">
+                <a href="#" class="nav-link text-light px-3 py-2 d-block">
+                    <i class="fal fa-sign-out-alt"></i>
+                    Logout
+                </a>
+            </li>
+        </ul>
+    </nav>
+
+    <section class=" my-container">
+        <nav class="nav bg-white shadow-sm sticky-top d-flex justify-content-between">
+            <div class="d-flex m-3">
+                <button class="btn btn-sm" id="menu-btn"><i class="fal fa-bars text-blue fw-bolder"></i></button>
+                <h2 class="fs-5 yellowText ps-2 mt-1">COMMENCEMENT EVALUATION</h2>
+            </div>
+            <div class="d-flex mt-3">
+                <a class="nav-link" href="#">
+                    <div type="button" class=" position-relative ">
+                        <i class="fal fa-bell text-blue fw-bolder"></i>
+                        <span
+                            class="position-absolute top-0 start-100 translate-middle p-1 bg-primary border border-light rounded-circle">
+                            <span class="visually-hidden">New alerts</span>
+                        </span>
+                    </div>
+                </a>
+                <a class="nav-link" href="#">
+                    <img src="/images/headerImage.png" alt="" class="img-fluid thumbnail rounded-circle bg2 p-1">
+                    <span>Admin</span>
+                </a>
+            </div>
+        </nav>
+
+        <div class="dashboard-content px-3 pt-4">
+            <div class="row justify-content-center">
+                <div class="col-md-10">
+                    <div class="d-flex justify-content-between mb-3">
+                        <a href="#" class="text-black"><i class="fal fa-arrow-left"> Go Back</i></a>
+                        <button type="button" class="btn btn-primary btn-sm">SAVE</button>
+                    </div>
+                    <div class="card shadow border-0 mb-5">
+                        <div class="card-header bg-transparent border-0 yellowText">
+                            <i class="fal fa-user"></i>
+                            Particulars of Institution
+                        </div>
+                        <div class="card-body">
+                            <form action="" class="" id="formID">
+                                <div class="row g-3 mb-3">
+                                    <div class="col-md-12">
+                                        <div class="input-group">
+                                            <input type="text" class="form-control" placeholder="Name of School">
+                                            <span class="input-group-text bg2 border-0">
+                                                <i class="fal fa-search"></i>
+                                            </span>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-12">
+                                        <input type="text" class="form-control"
+                                            placeholder="Location of School (Autogenerated)">
+                                    </div>
+
+                                    <div class="col-md-12">
+                                        <input type="text" class="form-control"
+                                            placeholder="Date of visit (Autogenerated)">
+                                    </div>
+
+                                    <div class="col-md-12">
+                                        <input type="text" class="form-control"
+                                            placeholder="Email Address  (Autogenerated)">
+                                    </div>
+
+                                    <div class="col-md-12">
+                                        <input type="text" class="form-control" placeholder="Phone (Autogenerated)">
+                                    </div>
+
+                                </div>
+
+                                <div class="row g-3 mb-3">
+                                    <div class="col-md-12">
+                                        <div class="form-label small">Visiting Inspectors</div>
+                                        <input type="text" class="form-control" placeholder="(Autogenerated)">
+                                    </div>
+
+                                    <div class="col-md-12">
+                                        <input type="text" class="form-control" placeholder="(Autogenerated)">
+                                    </div>
+
+                                    <div class="col-md-12">
+                                        <input type="text" class="form-control" placeholder="(Autogenerated)">
+                                    </div>
+                                </div>
+
+                                <div class="row g-3 mb-3">
+                                    <div class="col-md-12">
+                                        <label for="Proprietorship" class="form-label">Proprietorship </label>
+                                        <input type="text" class="form-control" placeholder="(Autogenerated)"
+                                            id="Proprietorship">
+                                    </div>
+
+                                </div>
+
+                                <div class="row g-3 mb-3">
+                                    <div class="col-md-12">
+                                        <label for="HeadTeacherQualification" class="form-label">Head Teacher
+                                            Qualification </label>
+                                        <input type="text" class="form-control" placeholder="(Autogenerated)"
+                                            id="HeadTeacherQualification">
+                                    </div>
+
+                                </div>
+
+                                <div class="row g-3 mb-3">
+                                    <div class="col-md-12">
+                                        <label for="HeadTeacherQualification" class="form-label">Brief History of
+                                            School
+                                        </label>
+                                        <textarea class="form-control" placeholder="(Autogenerated)"
+                                            id="HeadTeacherQualification"></textarea>
+                                    </div>
+                                </div>
+
+                                <div class="row g-3 mb-3">
+                                    <div class="col-md-12">
+                                        <label for="HeadTeacherQualification" class="form-label">
+                                            Year of
+                                            Establishment
+                                        </label>
+                                        <input type="text" class="form-control" placeholder="(Autogenerated)"
+                                            id="HeadTeacherQualification">
+                                    </div>
+                                </div>
+
+                                <div class="row g-3 mb-3">
+                                    <div class="col-md-12">
+                                        <label for="HeadTeacherQualification" class="form-label">
+                                            Student/Pupil Enrollment
+                                        </label>
+                                        <input type="text" class="form-control" placeholder="(Autogenerated)"
+                                            id="HeadTeacherQualification">
+                                    </div>
+                                </div>
+
+                                <div class="row g-3 mb-3">
+                                    <div class="col-md-12">
+                                        <label for="Staffing" class="form-label">
+                                            Staffing (Number with & without Teaching Qualification )
+                                        </label>
+                                        <input type="text" class="form-control" placeholder="(Autogenerated)"
+                                            id="Staffing">
+                                    </div>
+                                </div>
+
+                                <div class="row g-3 mb-3">
+                                    <div class="col-md-12">
+                                        <div class="jumbotron mt-3 border border-success rounded p-1"
+                                            data-x-wrapper="employees">
+                                            <label for="" class="form-label">Subjects Offered (Nursery)</label>
+                                            <div class="row my-2" data-x-group>
+                                                <div class="col-9">
+                                                    <div class="d-flex justify-content-around">
+                                                        <input type="text" name="name" placeholder="Subject Name"
+                                                            class=" form-control me-1">
+                                                        <input type="text" name="periods"
+                                                            placeholder="Number of periods" class=" form-control me-1">
+                                                        <input type="text" name="Recommended" placeholder="Recommended"
+                                                            class=" form-control me-1">
+                                                    </div>
+
+                                                </div>
+
+                                                <div class="col-3">
+                                                    <button type="button" class="btn btn-outline-danger btn-sm"
+                                                        data-remove-btn>-</button>
+                                                    <button type="button" class="btn btn-outline-primary btn-sm"
+                                                        data-add-btn>+</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row g-3 mb-3">
+                                    <div class="col-md-12">
+                                        <div class="jumbotron mt-3 border border-success rounded p-1"
+                                            data-x-wrapper="employees">
+                                            <label for="" class="form-label">Subjects Offered (Primary)</label>
+                                            <div class="row my-2" data-x-group>
+                                                <div class="col-9">
+                                                    <div class="d-flex justify-content-around">
+                                                        <input type="text" name="name" placeholder="Subject Name"
+                                                            class=" form-control me-1">
+                                                        <input type="text" name="periods"
+                                                            placeholder="Number of periods" class=" form-control me-1">
+                                                        <input type="text" name="Recommended" placeholder="Recommended"
+                                                            class=" form-control me-1">
+                                                    </div>
+
+                                                </div>
+
+                                                <div class="col-3">
+                                                    <button type="button" class="btn btn-outline-danger btn-sm"
+                                                        data-remove-btn>-</button>
+                                                    <button type="button" class="btn btn-outline-primary btn-sm"
+                                                        data-add-btn>+</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row g-3 mb-3">
+                                    <div class="col-md-12">
+                                        <div class="jumbotron mt-3 border border-success rounded p-1"
+                                            data-x-wrapper="employees">
+                                            <label for="" class="form-label">Subjects Offered (Junior Secondary)</label>
+                                            <div class="row my-2" data-x-group>
+                                                <div class="col-9">
+                                                    <div class="d-flex justify-content-around">
+                                                        <input type="text" name="name" placeholder="Subject Name"
+                                                            class=" form-control me-1">
+                                                        <input type="text" name="periods"
+                                                            placeholder="Number of periods" class=" form-control me-1">
+                                                        <input type="text" name="Recommended" placeholder="Recommended"
+                                                            class=" form-control me-1">
+                                                    </div>
+
+                                                </div>
+
+                                                <div class="col-3">
+                                                    <button type="button" class="btn btn-outline-danger btn-sm"
+                                                        data-remove-btn>-</button>
+                                                    <button type="button" class="btn btn-outline-primary btn-sm"
+                                                        data-add-btn>+</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row g-3 mb-3">
+                                    <div class="col-md-12">
+                                        <div class="jumbotron mt-3 border border-success rounded p-1"
+                                            data-x-wrapper="employees">
+                                            <label for="" class="form-label">Subjects Offered (Senior Secondary)
+                                            </label>
+                                            <div class="row my-2" data-x-group>
+                                                <div class="col-9">
+                                                    <div class="d-flex justify-content-around">
+                                                        <input type="text" name="name" placeholder="Subject Name"
+                                                            class=" form-control me-1">
+                                                        <input type="text" name="periods"
+                                                            placeholder="Number of periods" class=" form-control me-1">
+                                                        <input type="text" name="Recommended" placeholder="Recommended"
+                                                            class=" form-control me-1">
+                                                    </div>
+
+                                                </div>
+
+                                                <div class="col-3">
+                                                    <button type="button" class="btn btn-outline-danger btn-sm"
+                                                        data-remove-btn>-</button>
+                                                    <button type="button" class="btn btn-outline-primary btn-sm"
+                                                        data-add-btn>+</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row g-3 mb-3">
+                                    <div class="card-subtitle small mt-2">Pupil and Staff Enrollment
+                                    </div>
+                                    <div class="col-md-1">
+                                        <div class="form-text small" style="font-size: 11px;">Nur 1</div>
+                                    </div>
+
+                                    <div class="col-md">
+                                        <input type="text" class="form-control" placeholder="Male">
+                                    </div>
+
+                                    <div class="col-md">
+                                        <input type="text" class="form-control" placeholder="Female">
+                                    </div>
+
+                                    <div class="col-md">
+                                        <input type="text" class="form-control" placeholder="Total(Autocalculated)">
+                                    </div>
+
+                                    <div class="col-md">
+                                        <input type="text" class="form-control" placeholder="Male Staff">
+                                    </div>
+
+                                    <div class="col-md">
+                                        <input type="text" class="form-control" placeholder="Female Staff">
+                                    </div>
+
+                                    <div class="col-md">
+                                        <input type="text" class="form-control" placeholder="Total(Autocalculated)">
+                                    </div>
+                                </div>
+
+                                <div class="row g-3 mb-3">
+                                    <div class="col-md-1">
+                                        <div class="form-text small" style="font-size: 11px;">Nur 2</div>
+                                    </div>
+
+                                    <div class="col-md">
+                                        <input type="text" class="form-control" placeholder="Male">
+                                    </div>
+
+                                    <div class="col-md">
+                                        <input type="text" class="form-control" placeholder="Female">
+                                    </div>
+
+                                    <div class="col-md">
+                                        <input type="text" class="form-control" placeholder="Total(Autocalculated)">
+                                    </div>
+
+                                    <div class="col-md">
+                                        <input type="text" class="form-control" placeholder="Male Staff">
+                                    </div>
+
+                                    <div class="col-md">
+                                        <input type="text" class="form-control" placeholder="Female Staff">
+                                    </div>
+
+                                    <div class="col-md">
+                                        <input type="text" class="form-control" placeholder="Total(Autocalculated)">
+                                    </div>
+                                </div>
+
+                                <div class="row g-3 mb-3">
+                                    <div class="col-md-1">
+                                        <div class="form-text small" style="font-size: 11px;">Nur 3</div>
+                                    </div>
+
+                                    <div class="col-md">
+                                        <input type="text" class="form-control" placeholder="Male">
+                                    </div>
+
+                                    <div class="col-md">
+                                        <input type="text" class="form-control" placeholder="Female">
+                                    </div>
+
+                                    <div class="col-md">
+                                        <input type="text" class="form-control" placeholder="Total(Autocalculated)">
+                                    </div>
+
+                                    <div class="col-md">
+                                        <input type="text" class="form-control" placeholder="Male Staff">
+                                    </div>
+
+                                    <div class="col-md">
+                                        <input type="text" class="form-control" placeholder="Female Staff">
+                                    </div>
+
+                                    <div class="col-md">
+                                        <input type="text" class="form-control" placeholder="Total(Autocalculated)">
+                                    </div>
+                                </div>
+
+                                <div class="row g-3 mb-3">
+                                    <div class="col-md-1">
+                                        <div class="form-text small" style="font-size: 11px;">Pri 1</div>
+                                    </div>
+
+                                    <div class="col-md">
+                                        <input type="text" class="form-control" placeholder="Male">
+                                    </div>
+
+                                    <div class="col-md">
+                                        <input type="text" class="form-control" placeholder="Female">
+                                    </div>
+
+                                    <div class="col-md">
+                                        <input type="text" class="form-control" placeholder="Total(Autocalculated)">
+                                    </div>
+
+                                    <div class="col-md">
+                                        <input type="text" class="form-control" placeholder="Male Staff">
+                                    </div>
+
+                                    <div class="col-md">
+                                        <input type="text" class="form-control" placeholder="Female Staff">
+                                    </div>
+
+                                    <div class="col-md">
+                                        <input type="text" class="form-control" placeholder="Total(Autocalculated)">
+                                    </div>
+                                </div>
+
+                                <div class="row g-3 mb-3">
+                                    <div class="col-md-1">
+                                        <div class="form-text small" style="font-size: 11px;">Pri 2</div>
+                                    </div>
+
+                                    <div class="col-md">
+                                        <input type="text" class="form-control" placeholder="Male">
+                                    </div>
+
+                                    <div class="col-md">
+                                        <input type="text" class="form-control" placeholder="Female">
+                                    </div>
+
+                                    <div class="col-md">
+                                        <input type="text" class="form-control" placeholder="Total(Autocalculated)">
+                                    </div>
+
+                                    <div class="col-md">
+                                        <input type="text" class="form-control" placeholder="Male Staff">
+                                    </div>
+
+                                    <div class="col-md">
+                                        <input type="text" class="form-control" placeholder="Female Staff">
+                                    </div>
+
+                                    <div class="col-md">
+                                        <input type="text" class="form-control" placeholder="Total(Autocalculated)">
+                                    </div>
+                                </div>
+
+                                <div class="row g-3 mb-3">
+                                    <div class="col-md-1">
+                                        <div class="form-text small" style="font-size: 11px;">Pri 3</div>
+                                    </div>
+
+                                    <div class="col-md">
+                                        <input type="text" class="form-control" placeholder="Male">
+                                    </div>
+
+                                    <div class="col-md">
+                                        <input type="text" class="form-control" placeholder="Female">
+                                    </div>
+
+                                    <div class="col-md">
+                                        <input type="text" class="form-control" placeholder="Total(Autocalculated)">
+                                    </div>
+
+                                    <div class="col-md">
+                                        <input type="text" class="form-control" placeholder="Male Staff">
+                                    </div>
+
+                                    <div class="col-md">
+                                        <input type="text" class="form-control" placeholder="Female Staff">
+                                    </div>
+
+                                    <div class="col-md">
+                                        <input type="text" class="form-control" placeholder="Total(Autocalculated)">
+                                    </div>
+                                </div>
+
+                                <div class="row g-3 mb-3">
+                                    <div class="col-md-1">
+                                        <div class="form-text small" style="font-size: 11px;">Pri 4</div>
+                                    </div>
+
+                                    <div class="col-md">
+                                        <input type="text" class="form-control" placeholder="Male">
+                                    </div>
+
+                                    <div class="col-md">
+                                        <input type="text" class="form-control" placeholder="Female">
+                                    </div>
+
+                                    <div class="col-md">
+                                        <input type="text" class="form-control" placeholder="Total(Autocalculated)">
+                                    </div>
+
+                                    <div class="col-md">
+                                        <input type="text" class="form-control" placeholder="Male Staff">
+                                    </div>
+
+                                    <div class="col-md">
+                                        <input type="text" class="form-control" placeholder="Female Staff">
+                                    </div>
+
+                                    <div class="col-md">
+                                        <input type="text" class="form-control" placeholder="Total(Autocalculated)">
+                                    </div>
+                                </div>
+
+                                <div class="row g-3 mb-3">
+                                    <div class="col-md-1">
+                                        <div class="form-text small" style="font-size: 11px;">Pri 5</div>
+                                    </div>
+
+                                    <div class="col-md">
+                                        <input type="text" class="form-control" placeholder="Male">
+                                    </div>
+
+                                    <div class="col-md">
+                                        <input type="text" class="form-control" placeholder="Female">
+                                    </div>
+
+                                    <div class="col-md">
+                                        <input type="text" class="form-control" placeholder="Total(Autocalculated)">
+                                    </div>
+
+                                    <div class="col-md">
+                                        <input type="text" class="form-control" placeholder="Male Staff">
+                                    </div>
+
+                                    <div class="col-md">
+                                        <input type="text" class="form-control" placeholder="Female Staff">
+                                    </div>
+
+                                    <div class="col-md">
+                                        <input type="text" class="form-control" placeholder="Total(Autocalculated)">
+                                    </div>
+                                </div>
+
+                                <div class="row g-3 mb-3">
+                                    <div class="col-md-1">
+                                        <div class="form-text small" style="font-size: 11px;">Pri 6</div>
+                                    </div>
+
+                                    <div class="col-md">
+                                        <input type="text" class="form-control" placeholder="Male">
+                                    </div>
+
+                                    <div class="col-md">
+                                        <input type="text" class="form-control" placeholder="Female">
+                                    </div>
+
+                                    <div class="col-md">
+                                        <input type="text" class="form-control" placeholder="Total(Autocalculated)">
+                                    </div>
+
+                                    <div class="col-md">
+                                        <input type="text" class="form-control" placeholder="Male Staff">
+                                    </div>
+
+                                    <div class="col-md">
+                                        <input type="text" class="form-control" placeholder="Female Staff">
+                                    </div>
+
+                                    <div class="col-md">
+                                        <input type="text" class="form-control" placeholder="Total(Autocalculated)">
+                                    </div>
+                                </div>
+
+                                <div class="row g-3 mb-3">
+                                    <div class="col-md-1">
+                                        <div class="form-text small" style="font-size: 11px;">JSS 1</div>
+                                    </div>
+
+                                    <div class="col-md">
+                                        <input type="text" class="form-control" placeholder="Male">
+                                    </div>
+
+                                    <div class="col-md">
+                                        <input type="text" class="form-control" placeholder="Female">
+                                    </div>
+
+                                    <div class="col-md">
+                                        <input type="text" class="form-control" placeholder="Total(Autocalculated)">
+                                    </div>
+
+                                    <div class="col-md">
+                                        <input type="text" class="form-control" placeholder="Male Staff">
+                                    </div>
+
+                                    <div class="col-md">
+                                        <input type="text" class="form-control" placeholder="Female Staff">
+                                    </div>
+
+                                    <div class="col-md">
+                                        <input type="text" class="form-control" placeholder="Total(Autocalculated)">
+                                    </div>
+                                </div>
+
+                                <div class="row g-3 mb-3">
+                                    <div class="col-md-1">
+                                        <div class="form-text small" style="font-size: 11px;">JSS 2</div>
+                                    </div>
+
+                                    <div class="col-md">
+                                        <input type="text" class="form-control" placeholder="Male">
+                                    </div>
+
+                                    <div class="col-md">
+                                        <input type="text" class="form-control" placeholder="Female">
+                                    </div>
+
+                                    <div class="col-md">
+                                        <input type="text" class="form-control" placeholder="Total(Autocalculated)">
+                                    </div>
+
+                                    <div class="col-md">
+                                        <input type="text" class="form-control" placeholder="Male Staff">
+                                    </div>
+
+                                    <div class="col-md">
+                                        <input type="text" class="form-control" placeholder="Female Staff">
+                                    </div>
+
+                                    <div class="col-md">
+                                        <input type="text" class="form-control" placeholder="Total(Autocalculated)">
+                                    </div>
+                                </div>
+
+                                <div class="row g-3 mb-3">
+                                    <div class="col-md-1">
+                                        <div class="form-text small" style="font-size: 11px;">JSS 3</div>
+                                    </div>
+
+                                    <div class="col-md">
+                                        <input type="text" class="form-control" placeholder="Male">
+                                    </div>
+
+                                    <div class="col-md">
+                                        <input type="text" class="form-control" placeholder="Female">
+                                    </div>
+
+                                    <div class="col-md">
+                                        <input type="text" class="form-control" placeholder="Total(Autocalculated)">
+                                    </div>
+
+                                    <div class="col-md">
+                                        <input type="text" class="form-control" placeholder="Male Staff">
+                                    </div>
+
+                                    <div class="col-md">
+                                        <input type="text" class="form-control" placeholder="Female Staff">
+                                    </div>
+
+                                    <div class="col-md">
+                                        <input type="text" class="form-control" placeholder="Total(Autocalculated)">
+                                    </div>
+                                </div>
+
+                                <div class="row g-3 mb-3">
+                                    <div class="col-md-1">
+                                        <div class="form-text small" style="font-size: 11px;">SSS 1</div>
+                                    </div>
+
+                                    <div class="col-md">
+                                        <input type="text" class="form-control" placeholder="Male">
+                                    </div>
+
+                                    <div class="col-md">
+                                        <input type="text" class="form-control" placeholder="Female">
+                                    </div>
+
+                                    <div class="col-md">
+                                        <input type="text" class="form-control" placeholder="Total(Autocalculated)">
+                                    </div>
+
+                                    <div class="col-md">
+                                        <input type="text" class="form-control" placeholder="Male Staff">
+                                    </div>
+
+                                    <div class="col-md">
+                                        <input type="text" class="form-control" placeholder="Female Staff">
+                                    </div>
+
+                                    <div class="col-md">
+                                        <input type="text" class="form-control" placeholder="Total(Autocalculated)">
+                                    </div>
+                                </div>
+
+                                <div class="row g-3 mb-3">
+                                    <div class="col-md-1">
+                                        <div class="form-text small" style="font-size: 11px;">SSS 2</div>
+                                    </div>
+
+                                    <div class="col-md">
+                                        <input type="text" class="form-control" placeholder="Male">
+                                    </div>
+
+                                    <div class="col-md">
+                                        <input type="text" class="form-control" placeholder="Female">
+                                    </div>
+
+                                    <div class="col-md">
+                                        <input type="text" class="form-control" placeholder="Total(Autocalculated)">
+                                    </div>
+
+                                    <div class="col-md">
+                                        <input type="text" class="form-control" placeholder="Male Staff">
+                                    </div>
+
+                                    <div class="col-md">
+                                        <input type="text" class="form-control" placeholder="Female Staff">
+                                    </div>
+
+                                    <div class="col-md">
+                                        <input type="text" class="form-control" placeholder="Total(Autocalculated)">
+                                    </div>
+                                </div>
+
+                                <div class="row g-3 mb-3">
+                                    <div class="col-md-1">
+                                        <div class="form-text small" style="font-size: 11px;">SSS 3</div>
+                                    </div>
+
+                                    <div class="col-md">
+                                        <input type="text" class="form-control" placeholder="Male">
+                                    </div>
+
+                                    <div class="col-md">
+                                        <input type="text" class="form-control" placeholder="Female">
+                                    </div>
+
+                                    <div class="col-md">
+                                        <input type="text" class="form-control" placeholder="Total(Autocalculated)">
+                                    </div>
+
+                                    <div class="col-md">
+                                        <input type="text" class="form-control" placeholder="Male Staff">
+                                    </div>
+
+                                    <div class="col-md">
+                                        <input type="text" class="form-control" placeholder="Female Staff">
+                                    </div>
+
+                                    <div class="col-md">
+                                        <input type="text" class="form-control" placeholder="Total(Autocalculated)">
+                                    </div>
+                                </div>
+
+                                <div class="row g-3 mb-3">
+                                    <div class="col-md-1">
+                                        <div class="form-text small" style="font-size: 11px;">Total</div>
+                                    </div>
+
+                                    <div class="col-md">
+                                        <input type="text" class="form-control" placeholder="Total(Auto)">
+                                    </div>
+
+                                    <div class="col-md">
+                                        <input type="text" class="form-control" placeholder="Total(Auto)">
+                                    </div>
+
+                                    <div class="col-md">
+                                        <input type="text" class="form-control" placeholder="Total(Auto)">
+                                    </div>
+
+                                    <div class="col-md">
+                                        <input type="text" class="form-control" placeholder="Total(Auto)">
+                                    </div>
+
+                                    <div class="col-md">
+                                        <input type="text" class="form-control" placeholder="Total(Auto)">
+                                    </div>
+
+                                    <div class="col-md">
+                                        <input type="text" class="form-control" placeholder="Total(Auto)">
+                                    </div>
+                                </div>
+
+                                <div class="row g-3 mb-3">
+                                    <div class="col-md-12">
+                                        <label for="Staffing" class="form-label">
+                                            Physical Facilities
+                                        </label>
+                                        <input type="text" class="form-control" placeholder="Details" id="Staffing">
+                                    </div>
+                                </div>
+
+                                <div class="row g-3 mb-3">
+                                    <div class="col-md-12">
+                                        <label for="Staffing" class="form-label">
+                                            Classrooms
+                                        </label>
+                                        <input type="text" class="form-control" placeholder="Details">
+                                    </div>
+                                </div>
+
+                                <div class="row g-3 mb-3">
+                                    <div class="col-md-12">
+                                        <label for="Staffing" class="form-label">
+                                            Administrative Office
+                                        </label>
+                                        <input type="text" class="form-control" placeholder="Details">
+                                    </div>
+                                </div>
+
+                                <div class="row g-3 mb-3">
+                                    <div class="col-md-12">
+                                        <label for="Staffing" class="form-label">
+                                            Laboratories/Subject Rooms
+                                        </label>
+                                        <input type="text" class="form-control" placeholder="Details">
+                                    </div>
+                                </div>
+
+                                <div class="row g-3 mb-3">
+                                    <div class="col-md-12">
+                                        <label for="Staffing" class="form-label">
+                                            Library
+                                        </label>
+                                        <input type="text" class="form-control" placeholder="Details">
+                                    </div>
+                                </div>
+
+                                <div class="row g-3 mb-3">
+                                    <div class="col-md-12">
+                                        <label for="Staffing" class="form-label">
+                                            Workshop
+                                        </label>
+                                        <input type="text" class="form-control" placeholder="Details">
+                                    </div>
+                                </div>
+
+                                <div class="row g-3 mb-3">
+                                    <div class="col-md-12">
+                                        <label for="Staffing" class="form-label">
+                                            Toilets
+                                        </label>
+                                        <input type="text" class="form-control" placeholder="Details">
+                                    </div>
+                                </div>
+
+                                <div class="row g-3 mb-3">
+                                    <div class="col-md-12">
+                                        <label for="Staffing" class="form-label">
+                                            Sports/Game Facilities
+                                        </label>
+                                        <input type="text" class="form-control" placeholder="Details">
+                                    </div>
+                                </div>
+
+                                <div class="row g-3 mb-3">
+                                    <div class="col-md-12">
+                                        <label for="Staffing" class="form-label">
+                                            Environmental Sanitation
+                                        </label>
+                                        <input type="text" class="form-control" placeholder="Details">
+                                    </div>
+                                </div>
+
+                                <div class="row g-3 mb-3">
+                                    <div class="col-md-12">
+                                        <label for="Staffing" class="form-label">
+                                            Flags
+                                        </label>
+                                        <input type="text" class="form-control" placeholder="Details">
+                                    </div>
+                                </div>
+
+                                <div class="row g-3 mb-3">
+                                    <div class="col-md-12">
+                                        <label for="Staffing" class="form-label">
+                                            First Aid Box/Clinic
+                                        </label>
+                                        <input type="text" class="form-control" placeholder="Details">
+                                    </div>
+                                </div>
+
+                                <div class="row g-3 mb-3">
+                                    <div class="col-md-12">
+                                        <label for="Staffing" class="form-label">
+                                            ICT Facilities
+                                        </label>
+                                        <input type="text" class="form-control" placeholder="Details">
+                                    </div>
+                                </div>
+
+                                <div class="row g-3 mb-3">
+                                    <div class="col-md-12">
+                                        <label for="Staffing" class="form-label">
+                                            Source of Light
+                                        </label>
+                                        <input type="text" class="form-control" placeholder="Details">
+                                    </div>
+                                </div>
+
+                                <div class="row g-3 mb-3">
+                                    <div class="col-md-12">
+                                        <label for="Staffing" class="form-label">
+                                            Source of Water
+                                        </label>
+                                        <input type="text" class="form-control" placeholder="Details">
+                                    </div>
+                                </div>
+
+                                <div class="row g-3 mb-3">
+                                    <div class="col-md-12">
+                                        <label for="Staffing" class="form-label">
+                                            Fence
+                                        </label>
+                                        <input type="text" class="form-control" placeholder="Details">
+                                    </div>
+                                </div>
+
+                                <div class="row g-3 mb-3">
+                                    <div class="col-md-12">
+                                        <label for="Staffing" class="form-label">
+                                            Statutory /Non Statutory Records
+                                        </label>
+                                        <textarea class="form-control" placeholder="Details"></textarea>
+                                    </div>
+                                </div>
+
+                                <div class="row g-3 mb-3">
+                                    <div class="col-md-12">
+                                        <label for="Staffing" class="form-label">
+                                            Classroom Teaching Observation(Including Lesson notes, Diaries and Pupils
+                                            written work)
+                                        </label>
+                                        <textarea class="form-control" placeholder="Details"></textarea>
+                                    </div>
+                                </div>
+
+                                <div class="row g-3 mb-3">
+                                    <div class="col-md-12">
+                                        <label for="Staffing" class="form-label">
+                                            General Observation
+                                        </label>
+                                        <textarea class="form-control" placeholder="Details"></textarea>
+                                    </div>
+                                </div>
+
+                                <div class="row g-3 mb-3">
+                                    <div class="col-md-12">
+                                        <label for="Staffing" class="form-label">
+                                            Recommendation
+                                        </label>
+                                        <textarea class="form-control" placeholder="Details"></textarea>
+                                    </div>
+                                </div>
+
+                                <div class="row g-3 mb-3">
+                                    <div class="col-md-12">
+                                        <label for="Staffing" class="form-label">
+                                            Reporting Inspector
+                                        </label>
+                                        <input type="text" class="form-control" placeholder="Details">
+                                    </div>
+                                </div>
+
+                                <div class="row g-3 mb-3">
+                                    <div class="col-md-12">
+                                        <label for="Staffing" class="form-label">
+                                            Team Leader
+                                        </label>
+                                        <input type="text" class="form-control" placeholder="Details">
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+    <script src="/jquery.replicate.js"></script>
+
+    <script>
+        const selector = '[data-x-wrapper]';
+        let options = {
+            disableNaming: '[data-disable-naming]',
+            wrapper: selector,
+            group: '[data-x-group]',
+            addBtn: '[data-add-btn]',
+            removeBtn: '[data-remove-btn]'
+        };
+
+        $(selector).replicate(options);
+
+        const form = $('#formID');
+
+        $(form).on('submit', (e) => {
+            e.preventDefault();
+
+            console.log($(e.target).serializeArray())
+        })
+
+    </script>
+
+    <!-- bootstrap js -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+        crossorigin="anonymous"></script>
+    <!-- custom js -->
+    <script src="/script.js"></script>
+</body>
+
+</html>

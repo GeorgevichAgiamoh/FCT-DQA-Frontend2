@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Directory </title>
+    <!--Bootstrap CSS-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!--Font Awesome-->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
+    <!-- custom css -->
+    <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand d-flex flex-column align-item-start" id="sidebar">
+        <a href="#" class="navbar-brand">
+            <img src="/images/logo.png" alt="" class="img-fluid" width="100">
+        </a>
+        <ul class="navbar-nav d-flex flex-column mt-1 w-100">
+            <li class="nav-item w-100">
+                <a href="#" class="nav-link text-light px-3 py-2 d-block">
+                    <i class="fal fa-home"></i>
+                    Dashboard
+                </a>
+            </li>
+            <li class="nav-item w-100">
+                <a href="#" class="nav-link text-light px-3 py-2 d-block">
+                    <i class="fal fa-folder-open"></i>
+                    Directory
+                </a>
+            </li>
+            <li class="nav-item w-100">
+                <a href="#" class="nav-link text-light px-3 py-2 d-block">
+                    <i class="fal fa-balance-scale"></i> Workflow
+                </a>
+            </li>
+            <li class="nav-item w-100">
+                <a href="#" class="nav-link text-light px-3 py-2 d-block">
+                    <i class="fal fa-envelope"></i> E-Notification
+                </a>
+            </li>
+            <li class="nav-item w-100">
+                <a href="#" class="nav-link text-light px-3 py-2 d-block">
+                    <i class="fal fa-credit-card"></i>
+                    Payments
+                </a>
+            </li>
+            <li class="nav-item w-100">
+                <a href="#" class="nav-link text-light px-3 py-2 d-block">
+                    <i class="fal fa-id-badge"></i>
+                    Identity Management
+                </a>
+            </li>
+            <li class="nav-item w-100">
+                <a href="#" class="nav-link text-light px-3 py-2 d-block">
+                    <i class="fal fa-location"></i>
+                    School Geolocator
+                </a>
+            </li>
+            <li class="nav-item w-100">
+                <a href="#" class="nav-link text-light px-3 py-2 d-block">
+                    <i class="fal fa-sign-out-alt"></i>
+                    Logout
+                </a>
+            </li>
+        </ul>
+    </nav>
+
+    <section class=" my-container">
+        <nav class="nav bg-white shadow-sm sticky-top d-flex justify-content-between">
+            <div class="d-flex m-3">
+                <button class="btn btn-sm" id="menu-btn"><i class="fal fa-bars text-blue fw-bolder"></i></button>
+                <h2 class="fs-5 ps-2 mt-1">Directory</h2>
+            </div>
+            <div class="d-flex mt-3">
+                <a class="nav-link" href="#">
+                    <div type="button" class=" position-relative ">
+                        <i class="fal fa-bell text-blue fw-bolder"></i>
+                        <span
+                            class="position-absolute top-0 start-100 translate-middle p-1 bg-primary border border-light rounded-circle">
+                            <span class="visually-hidden">New alerts</span>
+                        </span>
+                    </div>
+                </a>
+                <a class="nav-link" href="#">
+                    <img src="/images/headerImage.png" alt="" class="img-fluid thumbnail rounded-circle bg2 p-1">
+                    <span>Admin</span>
+                </a>
+            </div>
+        </nav>
+
+        <div class="dashboard-content px-3 pt-4">
+            <div class="row mb-3 justify-content-center">
+                <div class="col-11">
+                    <div class="text-end">
+                        <button class="btn btn-primary btn-sm">Register School</button>
+                    </div>
+                    <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link active rounded-pill small" id="pills-home-tab" data-bs-toggle="pill"
+                                data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home"
+                                aria-selected="true">School</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link rounded-pill small" id="pills-profile-tab" data-bs-toggle="pill"
+                                data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile"
+                                aria-selected="false">Staff</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link rounded-pill small" id="pills-profile-tab" data-bs-toggle="pill"
+                                data-bs-target="#pills-student" type="button" role="tab" aria-controls="pills-student"
+                                aria-selected="false">Student</button>
+                        </li>
+                    </ul>
+                    <div class="tab-content" id="pills-tabContent">
+                        <div class="tab-pane fade show active" id="pills-home" role="tabpanel"
+                            aria-labelledby="pills-home-tab" tabindex="0">
+                            <div class="row justify-content-center">
+                                <div class="card shadow border-0 yellowText mb-2">
+                                    <div class="card-body">
+                                        <i class="fal fa-user yellowText mb-3"> School</i>
+
+                                        <form method="post">
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <div class="input-group input-group-sm mb-3">
+
+                                                        <input type="text" class="form-control bg-transparent shadow border-0"
+                                                            placeholder="Username" aria-label="Username"
+                                                            aria-describedby="basic-addon1">
+                                                        <span class="input-group-text border-0 btn btn-primary"
+                                                            id="basic-addon1">Search</span>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-3">
+                                                    <select class="form-select bg-white  shadow border-0"
+                                                        aria-label="Small select example" aria-label="Filter select">
+                                                        <option selected disabled>Filter</option>
+                                                    </select>
+                                                </div>
+                                                <div class="col-md-3">
+                                                    <select class="form-select bg-white shadow border-0"
+                                                        aria-label="Small select example" aria-label="Filter select">
+                                                        <option selected disabled>No. of Entries</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                                <div class="card shadow border-0">
+                                    <div class="card-body">
+                                        <div class="table-responsive">
+                                            <table class="table">
+                                                <thead>
+                                                    <tr>
+                                                        <th>Name</th>
+                                                        <th>Type</th>
+                                                        <th>LEA</th>
+                                                        <th>DOR</th>
+                                                        <th>Email</th>
+                                                        <th>Action</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>Stable Shield</td>
+                                                        <td>Primary & Secondary</td>
+                                                        <td>AMAC</td>
+                                                        <td>8/02/2022</td>
+                                                        <td>user@email.com</td>
+                                                        <td>
+                                                            <a href="#" class="text-black">
+                                                                <i class="fal fa-ellipsis-v"></i>
+                                                            </a>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="pills-profile" role="tabpanel"
+                            aria-labelledby="pills-profile-tab" tabindex="0">
+
+                            <div class="row justify-content-center">
+                                <div class="card shadow border-0 yellowText mb-2">
+                                    <div class="card-body">
+                                        <i class="fal fa-user yellowText mb-3"> Staff</i>
+
+                                        <form method="post">
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <div class="input-group input-group-sm mb-3">
+
+                                                        <input type="text" class="form-control bg-transparent shadow border-0"
+                                                            placeholder="Username" aria-label="Username"
+                                                            aria-describedby="basic-addon1">
+                                                        <span class="input-group-text border-0 btn btn-primary"
+                                                            id="basic-addon1">Search</span>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-3">
+                                                    <select class="form-select bg-white shadow border-0"
+                                                        aria-label="Small select example" aria-label="Filter select">
+                                                        <option selected disabled>Filter</option>
+                                                    </select>
+                                                </div>
+                                                <div class="col-md-3">
+                                                    <select class="form-select bg-white shadow border-0"
+                                                        aria-label="Small select example" aria-label="Filter select">
+                                                        <option selected disabled>No. of Entries</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                                <div class="card shadow border-0">
+                                    <div class="card-body">
+                                        <div class="table-responsive">
+                                            <table class="table">
+                                                <thead>
+                                                    <tr>
+                                                        <th>Staff ID</th>
+                                                        <th>Name</th>
+                                                        <th>Surname </th>
+                                                        <th>DOB</th>
+                                                        <th>Phone Number</th>
+                                                        <th>Action</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>TT/2019/011424</td>
+                                                        <td>Awan</td>
+                                                        <td>Okpeh</td>
+                                                        <td>21/12/1998</td>
+                                                        <td>08046352671</td>
+                                                        <td>
+                                                            <a href="#" class="text-black">
+                                                                <i class="fal fa-ellipsis-v"></i>
+                                                            </a>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="tab-pane fade" id="pills-student" role="tabpanel"
+                            aria-labelledby="pills-student-tab" tabindex="0">
+                            <div class="row justify-content-center">
+                                <div class="card shadow border-0 yellowText mb-2">
+                                    <div class="card-body">
+                                        <i class="fal fa-user yellowText mb-3"> Student</i>
+
+                                        <form method="post">
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <div class="input-group input-group-sm mb-3">
+
+                                                        <input type="text" class="form-control bg-white shadow  border-0"
+                                                            placeholder="Username" aria-label="Username"
+                                                            aria-describedby="basic-addon1">
+                                                        <span class="input-group-text border-0 btn btn-primary"
+                                                            id="basic-addon1">Search</span>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-3">
+                                                    <select class="form-select bg-white shadow border-0"
+                                                        aria-label="Small select example" aria-label="Filter select">
+                                                        <option selected disabled>Filter</option>
+                                                    </select>
+                                                </div>
+                                                <div class="col-md-3">
+                                                    <select class="form-select bg-white shadow border-0"
+                                                        aria-label="Small select example" aria-label="Filter select">
+                                                        <option selected disabled>No. of Entries</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                                <div class="card shadow border-0">
+                                    <div class="card-body">
+                                        <div class="table-responsive">
+                                            <table class="table">
+                                                <thead>
+                                                    <tr>
+                                                        <th>Name</th>
+                                                        <th>email </th>
+                                                        <th>School</th>
+                                                        <th>Class</th>
+                                                        <th>LGA</th>
+                                                        <th>Action</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>User Name</td>
+                                                        <td>user@email.com</td>
+                                                        <td>Stable Shield</td>
+                                                        <td>JSS 1</td>
+                                                        <td>AMAC</td>
+                                                        <td>
+                                                            <a href="#" class="text-black">
+                                                                <i class="fal fa-ellipsis-v"></i>
+                                                            </a>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+    </section>
+
+
+    <!-- bootstrap js -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+        crossorigin="anonymous"></script>
+    <!-- custom js -->
+    <script src="/script.js"></script>
+</body>
+
+</html>

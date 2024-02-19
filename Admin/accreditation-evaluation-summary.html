@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>accreditation-evaluation-summary</title>
+    <!--Bootstrap CSS-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!--Font Awesome-->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
+    <!-- custom css -->
+    <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand d-flex flex-column align-item-start" id="sidebar">
+        <a href="#" class="navbar-brand">
+            <img src="/images/logo.png" alt="" class="img-fluid" width="100">
+        </a>
+        <ul class="navbar-nav d-flex flex-column mt-1 w-100">
+            <li class="nav-item w-100">
+                <a href="#" class="nav-link text-light px-3 py-2 d-block">
+                    <i class="fal fa-home"></i>
+                    Dashboard
+                </a>
+            </li>
+            <li class="nav-item w-100">
+                <a href="#" class="nav-link text-light px-3 py-2 d-block">
+                    <i class="fal fa-folder-open"></i>
+                    Directory
+                </a>
+            </li>
+            <li class="nav-item w-100">
+                <a href="#" class="nav-link text-light px-3 py-2 d-block">
+                    <i class="fal fa-balance-scale"></i> Workflow
+                </a>
+            </li>
+            <li class="nav-item w-100">
+                <a href="#" class="nav-link text-light px-3 py-2 d-block">
+                    <i class="fal fa-envelope"></i> E-Notification
+                </a>
+            </li>
+            <li class="nav-item w-100">
+                <a href="#" class="nav-link text-light px-3 py-2 d-block">
+                    <i class="fal fa-credit-card"></i>
+                    Payments
+                </a>
+            </li>
+            <li class="nav-item w-100">
+                <a href="#" class="nav-link text-light px-3 py-2 d-block">
+                    <i class="fal fa-id-badge"></i>
+                    Identity Management
+                </a>
+            </li>
+            <li class="nav-item w-100">
+                <a href="#" class="nav-link text-light px-3 py-2 d-block">
+                    <i class="fal fa-location"></i>
+                    School Geolocator
+                </a>
+            </li>
+            <li class="nav-item w-100">
+                <a href="#" class="nav-link text-light px-3 py-2 d-block">
+                    <i class="fal fa-sign-out-alt"></i>
+                    Logout
+                </a>
+            </li>
+        </ul>
+    </nav>
+
+    <section class=" my-container">
+        <nav class="nav bg-white shadow-sm sticky-top d-flex justify-content-between">
+            <div class="d-flex m-3">
+                <button class="btn btn-sm" id="menu-btn"><i class="fal fa-bars text-blue fw-bolder"></i></button>
+                <h2 class="fs-5 yellowText ps-2 mt-1">Accreditation EVALUATION - SUMMARY</h2>
+            </div>
+            <div class="d-flex mt-3">
+                <a class="nav-link" href="#">
+                    <div type="button" class=" position-relative ">
+                        <i class="fal fa-bell text-blue fw-bolder"></i>
+                        <span
+                            class="position-absolute top-0 start-100 translate-middle p-1 bg-primary border border-light rounded-circle">
+                            <span class="visually-hidden">New alerts</span>
+                        </span>
+                    </div>
+                </a>
+                <a class="nav-link" href="#">
+                    <img src="/images/headerImage.png" alt="" class="img-fluid thumbnail rounded-circle bg2 p-1">
+                    <span>Admin</span>
+                </a>
+            </div>
+        </nav>
+
+        <div class="dashboard-content px-3 pt-4">
+            <div class="row justify-content-center">
+                <div class="col-md-10">
+                    <div class="d-flex justify-content-between mb-3">
+                        <a href="#" class="text-black"><i class="fal fa-arrow-left"> Go Back</i></a>
+                        <button type="button" class="btn btn-primary btn-sm">SAVE</button>
+                    </div>
+                    <div class="card shadow border-0 mb-5">
+                        <div class="card-header bg-transparent border-0 yellowText">
+                            <i class="fal fa-user"></i>
+                            Particulars of Institution
+                        </div>
+                        <div class="card-body">
+                            <form action="" class="">
+                                <div class="row g-3">
+                                    <div class="col-md-12">
+                                        <div class="input-group">
+                                            <input type="text" class="form-control" placeholder="Name of School">
+                                            <span class="input-group-text bg2 border-0">
+                                                <i class="fal fa-search"></i>
+                                            </span>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-12">
+                                        <input type="text" class="form-control"
+                                            placeholder="Address/District/Town (Autogenerated)">
+                                    </div>
+
+                                    <div class="col-md-12">
+                                        <input type="text" class="form-control"
+                                            placeholder="Area council (Autogenerated)">
+                                    </div>
+
+                                    <div class="col-md-12">
+                                        <input type="text" class="form-control"
+                                            placeholder="Email Address  (Autogenerated)">
+                                    </div>
+
+                                    <div class="col-md-12">
+                                        <input type="tel" class="form-control" placeholder="Phone (Autogenerated)">
+                                    </div>
+
+                                    <div class="col-md-12">
+                                        <input type="text" class="form-control"
+                                            placeholder="Date of Evaluation (Autogenerated)">
+                                    </div>
+
+                                    <div class="col-md-12">
+                                        <input type="text" class="form-control"
+                                            placeholder="Date of Establishment of School (Auto-generated)">
+                                    </div>
+
+                                    <div class="col-md-12">
+                                        <input type="text" class="form-control"
+                                            placeholder="Type of School (Basic/Senior Secondary)">
+                                    </div>
+
+
+                                </div>
+
+                                <div class="row g-3">
+                                    <div class="col-md-12">
+                                        <h6 class="form-label mt-3">If Senior Secondary, which? (Select one)
+                                        </h6>
+                                    </div>
+
+                                    <div class="col-md-12">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="senior-secondary-type"
+                                                id="Grammar-Secondary">
+                                            <label class="form-check-label" for="Grammar-Secondary">
+                                                Grammar
+                                            </label>
+                                        </div>
+
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="senior-secondary-type"
+                                                id="Technical-Secondary">
+                                            <label class="form-check-label" for="Technical-Secondary">
+                                                Technical
+                                            </label>
+                                        </div>
+
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="senior-secondary-type"
+                                                id="Commercial-Secondary">
+                                            <label class="form-check-label" for="Commercial-Secondary">
+                                                Commercial
+                                            </label>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                                <div class="row g-3">
+                                    <div class="col-md-12">
+                                        <h6 class="form-label mt-3 small">Type of School [Select One]</h6>
+                                    </div>
+
+                                    <div class="col-md-12">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="institution-format"
+                                                id="Day">
+                                            <label class="form-check-label" for="Day">
+                                                Day
+                                            </label>
+                                        </div>
+
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="institution-format"
+                                                id="boarding">
+                                            <label class="form-check-label" for="boarding">
+                                                Boarding
+                                            </label>
+                                        </div>
+
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="institution-format"
+                                                id="both">
+                                            <label class="form-check-label" for="both">
+                                                Both
+                                            </label>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                                <div class="row g-3">
+                                    <div class="col-md-12">
+                                        <h6 class="form-label mt-3 small">Type of School [Select One]</h6>
+                                    </div>
+
+                                    <div class="col-md-12">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="institution-gender"
+                                                id="Male">
+                                            <label class="form-check-label" for="Male">
+                                                Male
+                                            </label>
+                                        </div>
+
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="institution-gender"
+                                                id="female">
+                                            <label class="form-check-label" for="female">
+                                                Female
+                                            </label>
+                                        </div>
+
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="institution-gender"
+                                                id="coeducation">
+                                            <label class="form-check-label" for="coeducation">
+                                                Co-Education
+                                            </label>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                                <div class="row g-3 mt-2">
+                                    <div class="col-md-12">
+                                        <label for="" class="form-label">Physical Facilities and Environment </label>
+                                        <textarea class="form-control" placeholder="Details"></textarea>
+                                    </div>
+
+                                    <div class="col-md-12">
+                                        <label for="" class="form-label">Staffing</label>
+                                        <textarea class="form-control" placeholder="Details"></textarea>
+                                    </div>
+
+                                    <div class="col-md-12">
+                                        <label for="" class="form-label">Curriculum & Academic Activities </label>
+                                        <textarea class="form-control" placeholder="Details"></textarea>
+                                    </div>
+
+                                    <div class="col-md-12">
+                                        <label for="" class="form-label">Support Services & Welfare</label>
+                                        <textarea class="form-control" placeholder="Details"></textarea>
+                                    </div>
+
+                                    <div class="col-md-12">
+                                        <label for="" class="form-label">Overall Comment by Evaluation Team (with a view
+                                            to recommending school for approval)
+                                        </label>
+                                        <textarea class="form-control" placeholder="Details"></textarea>
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <div class="row g-3 mt-2">
+                                        <h6 class="small fw-bolder">Summary of Team Scores</h6>
+                                        <div class="col">
+                                            <h6 class="small fw-bolder">Parts on Assessment form</h6>
+                                        </div>
+                                        <div class="col">
+                                            <h6 class="small fw-bolder">Assessor 1</h6>
+                                        </div>
+                                        <div class="col">
+                                            <h6 class="small fw-bolder">Assessor 1</h6>
+                                        </div>
+                                        <div class="col">
+                                            <h6 class="small fw-bolder">Assessor 1</h6>
+                                        </div>
+                                        <div class="col">
+                                            <h6 class="small fw-bolder">Assessor 1</h6>
+                                        </div>
+                                        <div class="col">
+                                            <h6 class="small fw-bolder">Assessor 1</h6>
+                                        </div>
+                                        <div class="col">
+                                            <h6 class="small fw-bolder">Total</h6>
+                                        </div>
+                                        <div class="col">
+                                            <h6 class="small fw-bolder">Average</h6>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="row g-3 mt-2">
+                                        <div class="col">
+                                            <h6 class="small fw-bolder">Part II</h6>
+                                        </div>
+                                        <div class="col">
+                                            <input type="text" placeholder="Score" class="form-control">
+                                        </div>
+                                        <div class="col">
+                                            <input type="text" placeholder="Score" class="form-control">
+                                        </div>
+                                        <div class="col">
+                                            <input type="text" placeholder="Score" class="form-control">
+                                        </div>
+                                        <div class="col">
+                                            <input type="text" placeholder="Score" class="form-control">
+                                        </div>
+                                        <div class="col">
+                                            <input type="text" placeholder="Score" class="form-control">
+                                        </div>
+                                        <div class="col">
+                                            <input type="text" placeholder="Auto" class="form-control">
+                                        </div>
+                                        <div class="col">
+                                            <input type="text" placeholder="Auto" class="form-control">
+                                        </div>
+
+                                    </div>
+
+                                    <div class="row g-3 mt-2">
+                                        <div class="col">
+                                            <h6 class="small fw-bolder">Part II</h6>
+                                        </div>
+                                        <div class="col">
+                                            <input type="text" placeholder="Score" class="form-control">
+                                        </div>
+                                        <div class="col">
+                                            <input type="text" placeholder="Score" class="form-control">
+                                        </div>
+                                        <div class="col">
+                                            <input type="text" placeholder="Score" class="form-control">
+                                        </div>
+                                        <div class="col">
+                                            <input type="text" placeholder="Score" class="form-control">
+                                        </div>
+                                        <div class="col">
+                                            <input type="text" placeholder="Score" class="form-control">
+                                        </div>
+                                        <div class="col">
+                                            <input type="text" placeholder="Auto" class="form-control">
+                                        </div>
+                                        <div class="col">
+                                            <input type="text" placeholder="Auto" class="form-control">
+                                        </div>
+
+                                    </div>
+
+                                    <div class="row g-3 mt-2">
+                                        <div class="col">
+                                            <h6 class="small fw-bolder">Part III</h6>
+                                        </div>
+                                        <div class="col">
+                                            <input type="text" placeholder="Score" class="form-control">
+                                        </div>
+                                        <div class="col">
+                                            <input type="text" placeholder="Score" class="form-control">
+                                        </div>
+                                        <div class="col">
+                                            <input type="text" placeholder="Score" class="form-control">
+                                        </div>
+                                        <div class="col">
+                                            <input type="text" placeholder="Score" class="form-control">
+                                        </div>
+                                        <div class="col">
+                                            <input type="text" placeholder="Score" class="form-control">
+                                        </div>
+                                        <div class="col">
+                                            <input type="text" placeholder="Auto" class="form-control">
+                                        </div>
+                                        <div class="col">
+                                            <input type="text" placeholder="Auto" class="form-control">
+                                        </div>
+
+                                    </div>
+
+                                    <div class="row g-3 mt-2">
+                                        <div class="col">
+                                            <h6 class="small fw-bolder">Part IV</h6>
+                                        </div>
+                                        <div class="col">
+                                            <input type="text" placeholder="Score" class="form-control">
+                                        </div>
+                                        <div class="col">
+                                            <input type="text" placeholder="Score" class="form-control">
+                                        </div>
+                                        <div class="col">
+                                            <input type="text" placeholder="Score" class="form-control">
+                                        </div>
+                                        <div class="col">
+                                            <input type="text" placeholder="Score" class="form-control">
+                                        </div>
+                                        <div class="col">
+                                            <input type="text" placeholder="Score" class="form-control">
+                                        </div>
+                                        <div class="col">
+                                            <input type="text" placeholder="Auto" class="form-control">
+                                        </div>
+                                        <div class="col">
+                                            <input type="text" placeholder="Auto" class="form-control">
+                                        </div>
+
+                                    </div>
+
+                                    <div class="row g-3 mt-2">
+                                        <div class="col">
+                                            <h6 class="small fw-bolder">Part IV</h6>
+                                        </div>
+                                        <div class="col">
+                                            <input type="text" placeholder="Auto" class="form-control">
+                                        </div>
+                                        <div class="col">
+                                            <input type="text" placeholder="Auto" class="form-control">
+                                        </div>
+                                        <div class="col">
+                                            <input type="text" placeholder="Auto" class="form-control">
+                                        </div>
+                                        <div class="col">
+                                            <input type="text" placeholder="Auto" class="form-control">
+                                        </div>
+                                        <div class="col">
+                                            <input type="text" placeholder="Auto" class="form-control">
+                                        </div>
+                                        <div class="col">
+                                            <input type="text" placeholder="Auto" class="form-control">
+                                        </div>
+                                        <div class="col">
+                                            <input type="text" placeholder="Auto" class="form-control">
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                                <div class="row g-3 mt-2">
+                                    <div class="col-md-12">
+                                        <label for="recommendation" class="form-label">Final Recommendation (Minimum
+                                            score for approval = 67%)</label>
+                                        <select id="recommendation" class="form-select">
+                                            <option value="" selected disabled>Select...</option>
+                                            <option value="recommended">Recommended</option>
+                                            <option value="not-recommended">Not Recommended</option>
+                                        </select>
+                                    </div>
+                                    <span class="small">Evaluator in Assessment Team</span>
+
+                                    <div class="col-6">
+                                        <input type="text" class="form-control" placeholder="Name">
+                                    </div>
+
+                                    <div class="col-6">
+                                        <input type="text" class="form-control" placeholder="Signature">
+                                    </div>
+
+                                    <div class="col-6">
+                                        <input type="text" class="form-control" placeholder="Name">
+                                    </div>
+
+                                    <div class="col-6">
+                                        <input type="text" class="form-control" placeholder="Signature">
+                                    </div>
+
+                                    <div class="col-6">
+                                        <input type="text" class="form-control" placeholder="Name">
+                                    </div>
+
+                                    <div class="col-6">
+                                        <input type="text" class="form-control" placeholder="Signature">
+                                    </div>
+
+                                    <div class="col-6">
+                                        <input type="text" class="form-control" placeholder="Name">
+                                    </div>
+
+                                    <div class="col-6">
+                                        <input type="text" class="form-control" placeholder="Signature">
+                                    </div>
+                                    <div class="col-6">
+                                        <input type="text" class="form-control" placeholder="Name">
+                                    </div>
+
+                                    <div class="col-6">
+                                        <input type="text" class="form-control" placeholder="Signature">
+                                    </div>
+
+                                    <div class="col-12">
+                                        <label class="form-label">Team Leader</label>
+                                        <input type="text" class="form-control mb-2" placeholder="Name (Autogenerated)">
+                                        <input type="text" class="form-control mb-2"
+                                            placeholder="Signature (Autogenerated)">
+                                        <input type="text" class="form-control mb-2"
+                                            placeholder="Date of Evaluation (Autogenerated)">
+                                    </div>
+                                </div>
+
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- bootstrap js -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+        crossorigin="anonymous"></script>
+    <!-- custom js -->
+    <script src="/script.js"></script>
+</body>
+
+</html>

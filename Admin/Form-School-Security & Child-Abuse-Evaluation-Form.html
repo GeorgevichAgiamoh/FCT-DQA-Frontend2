@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>School security and child abuse Evaluation</title>
+    <!--Bootstrap CSS-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!--Font Awesome-->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
+    <!-- custom css -->
+    <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand d-flex flex-column align-item-start" id="sidebar">
+        <a href="#" class="navbar-brand">
+            <img src="/images/logo.png" alt="" class="img-fluid" width="100">
+        </a>
+        <ul class="navbar-nav d-flex flex-column mt-1 w-100">
+            <li class="nav-item w-100">
+                <a href="#" class="nav-link text-light px-3 py-2 d-block">
+                    <i class="fal fa-home"></i>
+                    Dashboard
+                </a>
+            </li>
+            <li class="nav-item w-100">
+                <a href="#" class="nav-link text-light px-3 py-2 d-block">
+                    <i class="fal fa-folder-open"></i>
+                    Directory
+                </a>
+            </li>
+            <li class="nav-item w-100">
+                <a href="#" class="nav-link text-light px-3 py-2 d-block">
+                    <i class="fal fa-balance-scale"></i> Workflow
+                </a>
+            </li>
+            <li class="nav-item w-100">
+                <a href="#" class="nav-link text-light px-3 py-2 d-block">
+                    <i class="fal fa-envelope"></i> E-Notification
+                </a>
+            </li>
+            <li class="nav-item w-100">
+                <a href="#" class="nav-link text-light px-3 py-2 d-block">
+                    <i class="fal fa-credit-card"></i>
+                    Payments
+                </a>
+            </li>
+            <li class="nav-item w-100">
+                <a href="#" class="nav-link text-light px-3 py-2 d-block">
+                    <i class="fal fa-id-badge"></i>
+                    Identity Management
+                </a>
+            </li>
+            <li class="nav-item w-100">
+                <a href="#" class="nav-link text-light px-3 py-2 d-block">
+                    <i class="fal fa-location"></i>
+                    School Geolocator
+                </a>
+            </li>
+            <li class="nav-item w-100">
+                <a href="#" class="nav-link text-light px-3 py-2 d-block">
+                    <i class="fal fa-sign-out-alt"></i>
+                    Logout
+                </a>
+            </li>
+        </ul>
+    </nav>
+
+    <section class=" my-container">
+        <nav class="nav bg-white shadow-sm sticky-top d-flex justify-content-between">
+            <div class="d-flex m-3">
+                <button class="btn btn-sm" id="menu-btn"><i class="fal fa-bars text-blue fw-bolder"></i></button>
+                <h2 class="fs-5 yellowText ps-2 mt-1">School security and child abuse Evaluation</h2>
+            </div>
+            <div class="d-flex mt-3">
+                <a class="nav-link" href="#">
+                    <div type="button" class=" position-relative ">
+                        <i class="fal fa-bell text-blue fw-bolder"></i>
+                        <span
+                            class="position-absolute top-0 start-100 translate-middle p-1 bg-primary border border-light rounded-circle">
+                            <span class="visually-hidden">New alerts</span>
+                        </span>
+                    </div>
+                </a>
+                <a class="nav-link" href="#">
+                    <img src="/images/headerImage.png" alt="" class="img-fluid thumbnail rounded-circle bg2 p-1">
+                    <span>Admin</span>
+                </a>
+            </div>
+        </nav>
+
+        <div class="dashboard-content px-3 pt-4">
+            <div class="row justify-content-center">
+                <div class="col-md-10">
+                    <div class="d-flex justify-content-between mb-3">
+                        <i class="fal fa-arrow-left"> Go Back</i>
+                        <button type="button" class="btn btn-primary btn-sm">SAVE</button>
+                    </div>
+                    <div class="card shadow border-0 mb-5">
+                        <div class="card-header bg-transparent border-0 yellowText">
+                            <i class="fal fa-user"></i>
+                            Particulars of School
+                        </div>
+                        <div class="card-body">
+                            <form action="" id="formID">
+                                <div class="row g-3">
+                                    <div class="col-md-12">
+                                        <label class="form-label">Name of School</label>
+                                        <div class="input-group">
+                                            <input type="text" class="form-control" placeholder="Name of School">
+                                            <span class="input-group-text bg2 border-0">
+                                                <i class="fal fa-search"></i>
+                                            </span>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-12">
+                                        <label class="form-label">Does the school have a safe school policy document?
+                                            (If Yes, sight copy)</label>
+                                        <div class="form-check ms-5">
+                                            <input class="form-check-input" type="radio" name="safe-policy"
+                                                id="safe-policy-yes">
+                                            <label class="form-check-label" for="safe-policy-yes">
+                                                Yes
+                                            </label>
+                                        </div>
+                                        <div class="form-check ms-5">
+                                            <input class="form-check-input" type="radio" name="safe-policy"
+                                                id="safe-policy-no">
+                                            <label class="form-check-label" for="safe-policy-no">
+                                                No
+                                            </label>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-12">
+                                        <label class="form-label">Does the school organize security awareness training
+                                            for staff and students?</label>
+                                        <div class="form-check ms-5">
+                                            <input class="form-check-input" type="radio" name="security-awareness"
+                                                id="security-awareness-yes">
+                                            <label class="form-check-label" for="security-awareness-yes">
+                                                Yes
+                                            </label>
+                                        </div>
+                                        <div class="form-check ms-5">
+                                            <input class="form-check-input" type="radio" name="security-awareness"
+                                                id="security-awareness-no">
+                                            <label class="form-check-label" for="security-awareness-no">
+                                                No
+                                            </label>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-12">
+                                        <label class="form-label">Does the school organize security awareness training
+                                            for staff and students?</label>
+                                        <div class="form-check ms-5">
+                                            <input class="form-check-input" type="radio" name="security-awareness-date"
+                                                id="week-less">
+                                            <label class="form-check-label" for="week-less">
+                                                Less than 1 week
+                                            </label>
+                                        </div>
+                                        <div class="form-check ms-5">
+                                            <input class="form-check-input" type="radio" name="security-awareness-date"
+                                                id="2weeks-less">
+                                            <label class="form-check-label" for="2weeks-less">
+                                                Less than 2 weeks
+                                            </label>
+                                        </div>
+                                        <div class="form-check ms-5">
+                                            <input class="form-check-input" type="radio" name="security-awareness-date"
+                                                id="month-less">
+                                            <label class="form-check-label" for="month-less">
+                                                Less than 1 month
+                                            </label>
+                                        </div>
+                                        <div class="form-check ms-5">
+                                            <input class="form-check-input" type="radio" name="security-awareness-date"
+                                                id="morethanamonth">
+                                            <label class="form-check-label" for="morethanamonth">
+                                                Over 1 month
+                                            </label>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-12">
+                                        <label class="form-label">Does the school have perimeter fencing? </label>
+                                        <div class="form-check ms-5">
+                                            <input class="form-check-input" type="radio" name="perimeter-fencing"
+                                                id="perimeter-fencing-yes">
+                                            <label class="form-check-label" for="perimeter-fencing-yes">
+                                                Yes
+                                            </label>
+                                        </div>
+                                        <div class="form-check ms-5">
+                                            <input class="form-check-input" type="radio" name="perimeter-fencing"
+                                                id="perimeter-fencing-no">
+                                            <label class="form-check-label" for="perimeter-fencing-no">
+                                                No
+                                            </label>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-12">
+                                        <label class="form-label">Are there tags and register for
+                                            visitors/parents?</label>
+                                        <div class="form-check ms-5">
+                                            <input class="form-check-input" type="radio" name="visitorTag"
+                                                id="visitorTag-yes">
+                                            <label class="form-check-label" for="visitorTag-yes">
+                                                Yes
+                                            </label>
+                                        </div>
+                                        <div class="form-check ms-5">
+                                            <input class="form-check-input" type="radio" name="visitorTag"
+                                                id="visitorTag-no">
+                                            <label class="form-check-label" for="visitorTag-no">
+                                                No
+                                            </label>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-12">
+                                        <label class="form-label">Is identification culture practiced in the school,
+                                            where students/staff wear their ID cards</label>
+                                        <div class="form-check ms-5">
+                                            <input class="form-check-input" type="radio" name="identification-culture"
+                                                id="identification-culture-yes">
+                                            <label class="form-check-label" for="identification-culture-yes">
+                                                Yes
+                                            </label>
+                                        </div>
+                                        <div class="form-check ms-5">
+                                            <input class="form-check-input" type="radio" name="identification-culture"
+                                                id="identification-culture-no">
+                                            <label class="form-check-label" for="identification-culture-no">
+                                                No
+                                            </label>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-12">
+                                        <label class="form-label">Which of the security gadget does the school
+                                            use
+                                        </label>
+                                        <div class="form-check ms-5">
+                                            <input class="form-check-input" type="radio" name="security-gadget"
+                                                id="cctv">
+                                            <label class="form-check-label" for="cctv">
+                                                CCTV
+                                            </label>
+                                        </div>
+                                        <div class="form-check ms-5">
+                                            <input class="form-check-input" type="radio" name="security-gadget"
+                                                id="Visitortracking">
+                                            <label class="form-check-label" for="Visitortracking">
+                                                Visitor tracking
+                                            </label>
+                                        </div>
+                                        <div class="form-check ms-5">
+                                            <input class="form-check-input" type="radio" name="security-gadget"
+                                                id="Streettracking">
+                                            <label class="form-check-label" for="Streettracking">
+                                                Street tracking
+                                            </label>
+                                        </div>
+                                        <div class="form-check ms-5">
+                                            <input class="form-check-input" type="radio" name="security-gadget"
+                                                id="bodyScanner">
+                                            <label class="form-check-label" for="bodyScanner">
+                                                Body Scanner
+                                            </label>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-12">
+                                        <label class="form-label">Is there parents pick-up tag for pick-up after
+                                            school</label>
+                                        <div class="form-check ms-5">
+                                            <input class="form-check-input" type="radio" name="pick-up-tag"
+                                                id="pick-up-tag-yes">
+                                            <label class="form-check-label" for="pick-up-tag-yes">
+                                                Yes
+                                            </label>
+                                        </div>
+                                        <div class="form-check ms-5">
+                                            <input class="form-check-input" type="radio" name="pick-up-tag"
+                                                id="pick-up-tag-no">
+                                            <label class="form-check-label" for="pick-up-tag-no">
+                                                No
+                                            </label>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-12">
+                                        <label class="form-label">Is child’s right ACT available in the school</label>
+                                        <div class="form-check ms-5">
+                                            <input class="form-check-input" type="radio" name="ACT" id="ACT-yes">
+                                            <label class="form-check-label" for="ACT-yes">
+                                                Yes
+                                            </label>
+                                        </div>
+                                        <div class="form-check ms-5">
+                                            <input class="form-check-input" type="radio" name="ACT" id="ACT-no">
+                                            <label class="form-check-label" for="ACT-no">
+                                                No
+                                            </label>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-12">
+                                        <label class="form-label">Any document abuses experienced in the school?
+                                            (Multiple Selection)</label>
+                                        <div class="form-check ms-5">
+                                            <input class="form-check-input" type="checkbox" name="abuse-experience"
+                                                id="sexual-abuse">
+                                            <label class="form-check-label" for="sexual-abuse">
+                                                Sexual Abuse
+                                            </label>
+                                        </div>
+                                        <div class="form-check ms-5">
+                                            <input class="form-check-input" type="checkbox" name="abuse-experience"
+                                                id="drub-abuse">
+                                            <label class="form-check-label" for="drub-abuse">
+                                                Drug Abuse
+                                            </label>
+                                        </div>
+                                        <div class="form-check ms-5">
+                                            <input class="form-check-input" type="checkbox" name="abuse-experience"
+                                                id="child-abuse">
+                                            <label class="form-check-label" for="child-abuse">
+                                                Child Abuse
+                                            </label>
+                                        </div>
+                                        <div class="form-check ms-5">
+                                            <input class="form-check-input" type="checkbox" name="abuse-experience"
+                                                id="Trafficking">
+                                            <label class="form-check-label" for="Trafficking">
+                                                Trafficking
+                                            </label>
+                                        </div>
+                                        <div class="form-check ms-5">
+                                            <input class="form-check-input" type="checkbox" name="abuse-experience"
+                                                id="Neglect">
+                                            <label class="form-check-label" for="Neglect">
+                                                Neglect
+                                            </label>
+                                        </div>
+                                        <div class="form-check ms-5">
+                                            <input class="form-check-input" type="checkbox" name="abuse-experience"
+                                                id="Torture">
+                                            <label class="form-check-label" for="Torture">
+                                                Torture
+                                            </label>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-12">
+                                        <p class="small fw-bold">For Yes, Sight the relevant document, for No, Interview
+                                            pupils/students:
+                                        </p>
+                                        <div class="row">
+                                            <span class="small">Number of child abuse cases</span>
+                                            <div class="col-md-6">
+                                                <input type="text" class="form-control" placeholder="Number Solved">
+                                            </div>
+                                            <div class="col-md-6">
+                                                <input type="text" class="form-control" placeholder="Number Pending">
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-12">
+                                        <div class="row">
+                                            <span class="small">Number of referrals and organization referred to (sight
+                                                relevant documents)</span>
+                                            <div class="col-md-2">
+                                                <span class="small fw-bold">DQA</span>
+                                            </div>
+                                            <div class="col-md-8">
+                                                <input type="text" class="form-control" placeholder="Number">
+                                            </div>
+                                        </div>
+
+                                        <div class="row mt-2">
+                                            <div class="col-md-2">
+                                                <span class="small fw-bold">NGO/WOTCLEF</span>
+                                            </div>
+                                            <div class="col-md-8">
+                                                <input type="text" class="form-control" placeholder="Number">
+                                            </div>
+                                        </div>
+
+                                        <div class="row mt-2">
+                                            <div class="col-md-2">
+                                                <span class="small fw-bold">Police</span>
+                                            </div>
+                                            <div class="col-md-8">
+                                                <input type="text" class="form-control" placeholder="Number">
+                                            </div>
+                                        </div>
+
+                                        <div class="row mt-2">
+                                            <div class="col-md-2">
+                                                <span class="small fw-bold">NGO/WOTCLEF</span>
+                                            </div>
+                                            <div class="col-md-8">
+                                                <input type="text" class="form-control" placeholder="Number">
+                                            </div>
+                                        </div>
+
+                                        <div class="row mt-2">
+                                            <div class="col-md-2 d-flex">
+                                                <span class="small fw-bold">Others</span>
+                                                <input type="text" class="form-control" placeholder="specify">
+                                            </div>
+                                            <div class="col-md-8">
+                                                <input type="text" class="form-control" placeholder="Number">
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-12 mt-4">
+                                        <div class="row">
+                                            <span class="small">Evidence of sanction or mentoring or erring teachers if
+                                                any
+                                            </span>
+                                            <div class="col-md-2">
+                                                <span class="small fw-bold">Number of Sanctioned teachers</span>
+                                            </div>
+                                            <div class="col-md-8">
+                                                <input type="text" class="form-control" placeholder="Number">
+                                            </div>
+                                        </div>
+
+                                        <div class="row mt-2">
+                                            <div class="col-md-2">
+                                                <span class="small fw-bold">Type of sanction applied</span>
+                                            </div>
+                                            <div class="col-md-8">
+                                                <input type="text" class="form-control" placeholder="Details">
+                                            </div>
+                                        </div>
+
+                                        <div class="row mt-2">
+                                            <div class="col-md-2">
+                                                <span class="small fw-bold">Types of mentoring advice given</span>
+                                            </div>
+                                            <div class="col-md-8">
+                                                <input type="text" class="form-control" placeholder="Details">
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-12 mt-4">
+                                        <label class="form-label">Remarks</label>
+                                        <textarea placeholder="Remarks" class="form-control"></textarea>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+
+
+    <!-- bootstrap js -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+        crossorigin="anonymous"></script>
+    <!-- custom js -->
+    <script src="/script.js"></script>
+</body>
+
+</html>
