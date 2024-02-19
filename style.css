@@ -1,0 +1,337 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;0,800;1,400;1,800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Abel&display=swap");
+
+* {
+  font-family: "Abel", sans-serif;
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none !important;
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+
+html {
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  scroll-padding-top: 6rem;
+}
+
+html::-webkit-scrollbar {
+  width: 0.2rem;
+}
+
+html::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+html::-webkit-scrollbar-thumb {
+  background: #085097;
+}
+
+body {
+  min-height: 100vh;
+  background-color: #f8f8f8;
+}
+
+.small-font {
+  font-size: 10px;
+}
+
+.navbar {
+  font-family: "Open Sans", sans-serif;
+}
+
+.navbar {
+  width: 250px;
+  height: 100vh;
+  position: fixed;
+  margin-left: -300px;
+  background-color: #085097;
+  transition: 0.4s;
+  overflow-y: auto;
+  transition: transform 0.3s ease;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1000; /* Ensure sidebar is above other content */
+}
+
+.nav-item .nav-link {
+  margin-bottom: 1rem;
+}
+
+.nav-link:active,
+.nav-link:focus,
+.nav-link:hover {
+  background-color: #ffffff26;
+}
+
+.dropdown-menu {
+  background-color: #085097;
+}
+
+.dropdown-item:active,
+.dropdown-item:focus,
+.dropdown-item:hover {
+  background-color: #ffffff26;
+}
+
+.my-container {
+  /*transition: 0.4s;*/
+  transition: margin-left 0.3s ease;
+}
+
+/* for navbar */
+
+.active-nav {
+  margin-left: 0;
+  transform: translateX(0);
+}
+
+/* for main section */
+
+.active-cont {
+  margin-left: 250px;
+}
+
+@media (max-width: 768px) { /* Adjust breakpoint as needed */
+  .my-container {
+    margin-left: 0; /* Ensure container doesn't move */
+  }
+
+  .active-cont {
+    /* You can add styles here if needed when sidebar is active, 
+       but for overlay behavior, adjustments might not be necessary */
+  }
+}
+
+#menu-btn {
+  border: 1px solid #085097;
+  color: #fff;
+}
+
+#menu-btn:focus {
+  box-shadow: 0 0 0 0.25rem #08509744;
+}
+
+.thumbnail {
+  width: 30px;
+  height: 30px;
+}
+
+.text-blue {
+  color: #085097;
+}
+
+.links {
+  font-family: "Abel", sans-serif;
+}
+
+.form-label {
+  font-size: 13px;
+}
+
+.form-control {
+  background-color: hsl(136, 33%, 94%);
+  font-family: "Abel", sans-serif;
+  border: 0;
+  font-size: 15px;
+}
+
+.form-select {
+  background-color: hsl(136, 33%, 94%);
+  border: 0;
+  font-family: "Abel", sans-serif;
+  font-size: 14px;
+}
+
+.form-check {
+  font-size: 15px;
+}
+
+input::placeholder {
+  color: #333333 !important;
+  font-family: "Abel", sans-serif;
+  font-size: 15px;
+}
+
+.btn {
+  font-family: "Abel", sans-serif;
+}
+
+.card-body {
+  font-family: "Abel", sans-serif;
+}
+
+.nav-pills .nav-link.active {
+  background-color: #085097 !important;
+  color: white !important;
+}
+
+.nav-pills .nav-link {
+  color: #085097 !important;
+}
+
+.password-container {
+  position: relative;
+}
+
+.password-input {
+  padding-right: 50px;
+  /* Space for the icon */
+}
+
+.show-password-icon {
+  position: absolute;
+  top: 75%;
+  right: 30px;
+  transform: translateY(-70%);
+  cursor: pointer;
+}
+
+.bg6 {
+  background-color: hsl(210, 65%, 92%);
+}
+
+.bg2 {
+  background-color: hsl(136, 33%, 91%);
+}
+
+.bg3 {
+  background-color: hsl(25, 57%, 91%);
+}
+
+.bg4 {
+  background-color: hsl(53, 100%, 91%);
+}
+
+.bg5 {
+  background-color: hsl(320, 72%, 94%);
+}
+
+.bg1 {
+  background-color: #085097;
+}
+
+td {
+  font-size: 12px;
+}
+
+th {
+  font-size: 12px;
+}
+
+.text-blue {
+  color: #085097;
+}
+
+.light-green-text {
+  color: #04995a;
+}
+
+.yellowText {
+  color: #ccc670;
+}
+
+.cardBg {
+  background-image: url("./images/Card\ \(1\).png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  font-family: "Abel", sans-serif;
+}
+
+/*Calendar Styling*/
+.fc .fc-toolbar-title {
+  font-size: 1.2rem;
+  margin: 0px;
+}
+
+.fc-toolbar-chunk {
+  display: flex;
+  flex-direction: row;
+}
+
+.fc-today-button {
+  background-color: transparent !important;
+  border: 0.8px solid #085097 !important;
+  color: #085097 !important;
+  font-size: 10px;
+}
+
+.fc .fc-toolbar-title {
+  font-size: 1rem;
+  margin: 0px;
+  color: #ccc670;
+}
+
+.fc-toolbar-chunk {
+  display: flex;
+  flex-direction: row;
+  font-size: 0.7rem;
+}
+
+.fc-prev-button,
+.fc-next-button {
+  background-color: #085097 !important;
+  border: 0.8px solid #085097 !important;
+  color: #fff !important;
+}
+
+.fc .fc-col-header-cell-cushion {
+  display: inline-block;
+  padding: 2px 4px;
+  font-size: 0.8rem;
+}
+
+.fc .fc-scroller-liquid-absolute {
+  inset: 0px;
+  position: absolute;
+  font-size: 0.8rem;
+}
+
+/*Calendar Styling Ends*/
+
+/*Admin Dashboard*/
+.greenCard {
+  background-image: url("./images/greenCard.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  font-family: "Abel", sans-serif;
+}
+
+.BlueCard {
+  background-image: url("./images/blueCard.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  font-family: "Abel", sans-serif;
+}
+
+/*Data Table*/
+.dataTables_wrapper .dataTables_paginate {
+  float: right;
+  text-align: right;
+  padding-top: 0.25em;
+  font-size: 12px;
+}
+
+.dataTables_wrapper .dataTables_info {
+  clear: both;
+  float: left;
+  padding-top: 0.755em;
+  font-size: 12px;
+}
+
+.dataTables_length label {
+  font-size: 12px;
+}
+
+.dataTables_filter label {
+  font-size: 12px;
+}
