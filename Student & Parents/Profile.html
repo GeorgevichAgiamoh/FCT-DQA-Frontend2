@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+    <!--Bootstrap CSS-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!--Font Awesome-->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
+    <!-- custom css -->
+    <link rel="stylesheet" href="/style.css">
+
+
+</head>
+
+<body>
+    <nav class="navbar navbar-expand d-flex flex-column align-item-start" id="sidebar">
+        <a href="#" class="navbar-brand">
+            <img src="/images/logo.png" alt="" class="img-fluid" width="100">
+        </a>
+        <ul class="navbar-nav d-flex flex-column mt-1 w-100">
+            <li class="nav-item w-100">
+                <a href="#" class="nav-link text-light px-3 py-2 d-block">
+                    <i class="fal fa-home"></i>
+                    Dashboard
+                </a>
+            </li>
+            <li class="nav-item w-100">
+                <a href="#" class="nav-link text-light px-3 py-2 d-block">
+                    <i class="fal fa-folder-open"></i>
+                    Directory
+                </a>
+            </li>
+            <li class="nav-item w-100">
+                <a href="#" class="nav-link text-light px-3 py-2 d-block">
+                    <i class="fal fa-balance-scale"></i> Workflow
+                </a>
+            </li>
+            <li class="nav-item w-100">
+                <a href="#" class="nav-link text-light px-3 py-2 d-block">
+                    <i class="fal fa-envelope"></i> E-Notification
+                </a>
+            </li>
+            <li class="nav-item w-100">
+                <a href="#" class="nav-link text-light px-3 py-2 d-block">
+                    <i class="fal fa-credit-card"></i>
+                    Payments
+                </a>
+            </li>
+            <li class="nav-item w-100">
+                <a href="#" class="nav-link text-light px-3 py-2 d-block">
+                    <i class="fal fa-id-badge"></i>
+                    Identity Management
+                </a>
+            </li>
+            <li class="nav-item w-100">
+                <a href="#" class="nav-link text-light px-3 py-2 d-block">
+                    <i class="fal fa-location"></i>
+                    School Geolocator
+                </a>
+            </li>
+            <li class="nav-item w-100">
+                <a href="#" class="nav-link text-light px-3 py-2 d-block">
+                    <i class="fal fa-sign-out-alt"></i>
+                    Logout
+                </a>
+            </li>
+        </ul>
+    </nav>
+
+    <section class=" my-container">
+        <nav class="nav bg-white shadow-sm sticky-top d-flex justify-content-between">
+            <div class="d-flex m-3">
+                <button class="btn btn-sm" id="menu-btn"><i class="fal fa-bars text-blue fw-bolder"></i></button>
+                <h2 class="fs-5 ps-2 mt-1">Profile</h2>
+            </div>
+            <div class="d-flex mt-3">
+                <a class="nav-link" href="#">
+                    <div type="button" class=" position-relative ">
+                        <i class="fal fa-bell text-blue fw-bolder"></i>
+                        <span
+                            class="position-absolute top-0 start-100 translate-middle p-1 bg-primary border border-light rounded-circle">
+                            <span class="visually-hidden">New alerts</span>
+                        </span>
+                    </div>
+                </a>
+                <a class="nav-link" href="#">
+                    <img src="/images/headerImage.png" alt="" class="img-fluid thumbnail rounded-circle bg2 p-1">
+                    <span>Admin</span>
+                </a>
+            </div>
+        </nav>
+
+        <div class="dashboard-content px-3 pt-4">
+            <div class="row justify-content-center mb-3">
+                <div class="col-sm-11">
+                    <div class="text-end">
+                        <span class="text-success small">Student ID : 1234567890</span> <br>
+                        <button type="button" class="btn btn-primary btn-sm px-5">
+                            EDIT
+                        </button>
+                    </div>
+                    <div class="row mb-3">
+                        <div class="col-12">
+                            <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link active  small" id="pills-student-tab" data-bs-toggle="pill"
+                                        data-bs-target="#pills-student" type="button" role="tab"
+                                        aria-controls="pills-student" aria-selected="true">Student</button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link  small" id="pills-guardian-tab" data-bs-toggle="pill"
+                                        data-bs-target="#pills-guardian" type="button" role="tab"
+                                        aria-controls="pills-guardian" aria-selected="false">Parent/Guardian</button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link  small" id="pills-Academic-tab" data-bs-toggle="pill"
+                                        data-bs-target="#pills-Academic" type="button" role="tab"
+                                        aria-controls="pills-Academic" aria-selected="false">Academic</button>
+                                </li>
+
+                            </ul>
+                            <div class="tab-content" id="pills-tabContent">
+                                <div class="tab-pane fade show active" id="pills-student" role="tabpanel"
+                                    aria-labelledby="pills-home-tab" tabindex="0">
+
+                                    <div class="row justify-content-center">
+                                        <div class="card shadow border-0">
+                                            <div class="card-body">
+                                                <div class="row">
+                                                    <div class="col-md-3">
+                                                        <div class="yellowText">About Student</div>
+                                                        <img src="/images/passport.jpg" alt=""
+                                                            class="img-fluid img-thumbnail shadow rounded" width="100">
+                                                    </div>
+                                                    <div class="col-md-5">
+                                                        <div class="table-responsive">
+                                                            <table class="table table-borderless">
+                                                                <tbody>
+                                                                    <tr>
+                                                                        <th>Surname: </th>
+                                                                        <td>Ahmed</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <th>First Name: </th>
+                                                                        <td>Mariam</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <th>Middle Name: </th>
+                                                                        <td>12/11/2009</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <th>Gender:</th>
+                                                                        <td>Female</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <th>Nationality:</th>
+                                                                        <td>Nigerian</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <th>State of Origin</th>
+                                                                        <td>FCT</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <th>LGA of Origin</th>
+                                                                        <td>AMAC</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <th>Residential Address</th>
+                                                                        <td>ABUJA</td>
+                                                                        <td><button class="btn btn-primary btn-sm">View
+                                                                                Location</button></td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <th>Height(In Ft”inches)</th>
+                                                                        <td>5”11</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <th>Blood Type:</th>
+                                                                        <td>O-</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <th>Religion:</th>
+                                                                        <td>Islam</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <th>TBTest</th>
+                                                                        <td>Unknown</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <th>Heart Disease</th>
+                                                                        <td>Unknown</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <th>Malaria </th>
+                                                                        <td>Unknown</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <th>Liver Function</th>
+                                                                        <td>Unknown</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <th>VDRL Test</th>
+                                                                        <td>Unknown</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <th>HIV Test</th>
+                                                                        <td>Unknown</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <th>TPHA</th>
+                                                                        <td>Unknown</td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <div>
+                                                            <iframe
+                                                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3939.805560839713!2d7.410020773673717!3d9.081470688168162!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x104e75a6efa4c133%3A0x6daef1fb4b6935ae!2sEfab%20Estate!5e0!3m2!1sen!2sng!4v1705421991889!5m2!1sen!2sng"
+                                                                width="320" height="400" style="border:0;"
+                                                                allowfullscreen="" loading="lazy"
+                                                                referrerpolicy="no-referrer-when-downgrade">
+                                                            </iframe>
+                                                        </div>
+                                                        <div>
+                                                            <ul class="list-group">
+                                                                <li class="list-group-item h5 fw-bolder text-black">
+                                                                    Location
+                                                                </li>
+                                                                <li class="list-group-item">Longitude</li>
+                                                                <li class="list-group-item">Latitude</li>
+                                                                <li class="list-group-item"><a href="#"
+                                                                        class="btn btn-primary w-100">Use Map API</a>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="pills-guardian" role="tabpanel"
+                                    aria-labelledby="pills-profile-tab" tabindex="0">
+
+                                    <div class="row justify-content-center">
+                                        <div class="card shadow border-0">
+                                            <div class="card-body">
+                                                <div class="row">
+                                                    <div class="col-md-3">
+                                                        <div class="yellowText">About Parent/Guardian</div>
+                                                        <img src="/images/passport.jpg" alt=""
+                                                            class="img-fluid img-thumbnail shadow rounded" width="100">
+                                                    </div>
+                                                    <div class="col-md-5">
+                                                        <div class="table-responsive">
+                                                            <table class="table table-borderless">
+                                                                <tbody>
+                                                                    <tr>
+                                                                        <th class="text-success">Title: </th>
+                                                                        <td>MRS</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <th class="text-success">Surname:</th>
+                                                                        <td>Ahmed</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <th class="text-success">Other Name(s):</th>
+                                                                        <td>Fatima</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <th class="text-success">Phone Number:</th>
+                                                                        <td>08012345678</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <th class="text-success">Residential Address
+                                                                        </th>
+                                                                        <td>ABUJA</td>
+                                                                        <td><button class="btn btn-primary btn-sm">View
+                                                                                Location</button></td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <th class="text-success">Nationality:</th>
+                                                                        <td>Nigerian</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <th class="text-success">State of Origin</th>
+                                                                        <td>FCT</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <th class="text-success">LGA of Origin</th>
+                                                                        <td>AMAC</td>
+                                                                    </tr>
+
+                                                                    <tr>
+                                                                        <th class="text-success">Email</th>
+                                                                        <td>fatima@email.com</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <th class="text-success">Religion:</th>
+                                                                        <td>Islam</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <th class="text-success">Next Of Kin:</th>
+                                                                        <td>NIL</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <th class="text-success">N.O.K Phone No.</th>
+                                                                        <td>NIL</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <th class="text-success">
+                                                                            Guardian/Parent
+                                                                            Identity Card:
+                                                                        </th>
+                                                                        <td>
+                                                                            <input type="file" class="form-control">
+                                                                        </td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <div>
+                                                            <iframe
+                                                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3939.805560839713!2d7.410020773673717!3d9.081470688168162!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x104e75a6efa4c133%3A0x6daef1fb4b6935ae!2sEfab%20Estate!5e0!3m2!1sen!2sng!4v1705421991889!5m2!1sen!2sng"
+                                                                width="320" height="400" style="border:0;"
+                                                                allowfullscreen="" loading="lazy"
+                                                                referrerpolicy="no-referrer-when-downgrade">
+                                                            </iframe>
+                                                        </div>
+                                                        <div>
+                                                            <ul class="list-group">
+                                                                <li class="list-group-item h5 fw-bolder text-black">
+                                                                    Location
+                                                                </li>
+                                                                <li class="list-group-item">Longitude</li>
+                                                                <li class="list-group-item">Latitude</li>
+                                                                <li class="list-group-item"><a href="#"
+                                                                        class="btn btn-primary w-100">Use Map API</a>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="tab-pane fade" id="pills-Academic" role="tabpanel"
+                                    aria-labelledby="pills-profile-tab" tabindex="0">
+
+                                    <div class="row justify-content-center">
+                                        <div class="card shadow border-0">
+                                            <div class="card-body">
+                                                <div class="row">
+                                                    <div class="col-md-3">
+                                                        <div class="yellowText">About Parent/Guardian</div>
+                                                        <img src="/images/passport.jpg" alt=""
+                                                            class="img-fluid img-thumbnail shadow rounded" width="100">
+                                                    </div>
+                                                    <div class="col-md-9">
+                                                        <div class="table-responsive">
+                                                            <table class="table table-borderless">
+                                                                <tbody>
+                                                                    <tr>
+                                                                        <th>State of last school before this
+                                                                            registration: </th>
+                                                                        <td>FCT</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <th>LGA of last school before this registration:
+                                                                        </th>
+                                                                        <td>BWARI</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <th>Name of last school before this
+                                                                            registration: </th>
+                                                                        <td>BWARI PRIMARY SCHOOL</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <th>Your class before this registration:</th>
+                                                                        <td>JSS 1</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <th>Last Promotional Exam [Upload]:</th>
+                                                                        <td><input type="file" class="form-control">
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <th>LGA of school of choice or current school::
+                                                                        </th>
+                                                                        <td>AMAC</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <th>Category of school of choice or current
+                                                                            school:</th>
+                                                                        <td>ISLAMIYYA</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <th>Name of school of choice or current school :
+                                                                        </th>
+                                                                        <td>Stable Shield Model School</td>
+                                                                    </tr>
+
+                                                                    <tr>
+                                                                        <th>What class are you entering now or present
+                                                                            class:</th>
+                                                                        <td>JSS 2</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <th>Are you a new student to this school ? :
+                                                                        </th>
+                                                                        <td>
+                                                                            <input type="radio" class="btn-check"
+                                                                                name="new-student" id="new-student-yes"
+                                                                                value="yes" autocomplete="off" checked>
+                                                                            <label
+                                                                                class="btn btn-sm btn-outline-success"
+                                                                                for="new-student-yes">Yes</label>
+
+                                                                            <input type="radio" class="btn-check"
+                                                                                name="new-student" id="new-student-no"
+                                                                                value="no" autocomplete="off">
+                                                                            <label class="btn btn-sm btn-outline-danger"
+                                                                                for="new-student-no">No</label>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <th>Testimonial:</th>
+                                                                        <td><input type="file" class="form-control">
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <th>
+                                                                            <span>Created At</span>
+                                                                            <span>1/27/2022 8:04:31 AM</span>
+                                                                        </th>
+                                                                        <th>
+                                                                            <span>Created At</span>
+                                                                            <span>1/27/2022 8:04:31 AM</span>
+                                                                        </th>
+                                                                    </tr>
+                                                            </table>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- bootstrap js -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+        crossorigin="anonymous"></script>
+    <!-- custom js -->
+    <script src="/script.js"></script>
+</body>
+
+</html>
